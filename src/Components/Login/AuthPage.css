@@ -1,0 +1,43 @@
+.auth-container {
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+}
+
+.auth-card {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  transition: all 0.3s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.form-input {
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.btn-animate {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-animate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
