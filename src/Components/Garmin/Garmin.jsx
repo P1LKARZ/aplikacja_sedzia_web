@@ -4,6 +4,8 @@ import {
   doc, 
   setDoc, 
   getDoc,
+  deleteDoc,
+  updateDoc,
   collection, 
   getDocs, 
   query, 
@@ -26,6 +28,10 @@ function Garmin() {
   const [awayTeam, setAwayTeam] = useState("");
   const [czasGry, setCzasGry] = useState(""); 
 
+  // Stany dla edycji czasu wiersza
+  const [editingPinId, setEditingPinId] = useState(null);
+  const [editingTimeValue, setEditingTimeValue] = useState("");
+
   const [existingPins, setExistingPins] = useState([]);
   const [successMessage, setSuccessMessage] = useState("");
 
@@ -44,7 +50,7 @@ function Garmin() {
         return dateB - dateA;
       });
 
-      // Ograniczenie listy do maksymalnie 5 pozycji
+      // Max 5 pozycji
       setExistingPins(pinsList.slice(0, 5));
     } catch (error) {
       console.error("Błąd podczas pobierania PIN-ów: ", error);
@@ -56,63 +62,89 @@ function Garmin() {
   }, []);
 
   // Szukanie meczu po numerze
+ // Niezawodna funkcja wyszukiwania (działa bez indeksów Firebase)
   const handleSearchMatch = async (e) => {
-    e.preventDefault();
+    if (e && e.preventDefault) e.preventDefault();
     setSearchError("");
     setFoundMatch(null);
     setSuccessMessage("");
 
-    const cleanInput = matchNumberInput.trim().replace("#", "");
+    const inputTrimmed = matchNumberInput.trim().replace("#", "");
 
-    if (!cleanInput) {
+    if (!inputTrimmed) {
       setSearchError("Wpisz numer meczu!");
-      return;
-    }
-
-    const pinNumber = Number(cleanInput);
-
-    if (isNaN(pinNumber)) {
-      setSearchError("Numer meczu musi być liczbą!");
       return;
     }
 
     setLoading(true);
 
     try {
-      const q = query(
-        collectionGroup(db, "mecze"),
-        where("numer_meczu", "==", pinNumber)
-      );
+      // 1. Najpierw sprawdzamy w głównej kolekcji "mecze"
+      const mainRef = collection(db, "mecze");
+      const mainSnap = await getDocs(mainRef);
       
-      const querySnapshot = await getDocs(q);
+      let matchData = null;
+      let matchDocId = null;
 
-      if (querySnapshot.empty) {
-        setSearchError(`Nie znaleziono w bazie meczu o numerze #${cleanInput}`);
+      mainSnap.forEach((docSnap) => {
+        const data = docSnap.data();
+        if (
+          String(data.numer_meczu) === inputTrimmed ||
+          docSnap.id === inputTrimmed
+        ) {
+          matchData = data;
+          matchDocId = docSnap.id;
+        }
+      });
+
+      // 2. Jeśli nie ma w głównej, przeszukujemy wszystkie podkolekcje "mecze"
+      if (!matchData) {
+        const groupRef = collectionGroup(db, "mecze");
+        const groupSnap = await getDocs(groupRef);
+
+        groupSnap.forEach((docSnap) => {
+          const data = docSnap.data();
+          if (
+            String(data.numer_meczu) === inputTrimmed ||
+            docSnap.id === inputTrimmed
+          ) {
+            matchData = data;
+            matchDocId = docSnap.id;
+          }
+        });
+      }
+
+      if (matchData) {
+        setFoundMatch({ id: matchDocId, ...matchData });
       } else {
-        const matchDoc = querySnapshot.docs[0];
-        setFoundMatch({ id: matchDoc.id, ...matchDoc.data() });
+        setSearchError(`Nie znaleziono w bazie meczu o numerze #${inputTrimmed}`);
       }
     } catch (error) {
-      console.error("Błąd podczas szukania meczu: ", error);
-      setSearchError("Błąd podczas wyszukiwania meczu.");
+      console.error("Szczegóły błędu wyszukiwania:", error);
+      setSearchError(`Błąd podczas wyszukiwania: ${error.message}`);
     } finally {
       setLoading(false);
     }
   };
-
   // Przypisanie meczu z bazy jako PIN
+// Przypisanie meczu z bazy jako PIN (bezpieczne dla Firebase)
+// Przypisanie meczu z bazy jako PIN (z domyślnym czasem 45)
   const handleAssignDbMatch = async () => {
     if (!foundMatch) return;
 
-    const pinString = String(foundMatch.numer_meczu);
+    const pinString = String(foundMatch.numer_meczu || foundMatch.id).trim();
+
+    // Jeśli mecz w bazie nie posiada czasu, ustawia "45"
+    const pobranyCzas = String(foundMatch.czas || foundMatch.czas_gry || foundMatch.godzina || "").trim();
+    const finalCzas = pobranyCzas !== "" ? pobranyCzas : "45";
 
     try {
       await setDoc(doc(db, "watch_pins", pinString), {
-        matchId: foundMatch.id_mecz || foundMatch.id,
-        numer_meczu: foundMatch.numer_meczu,
-        home: (foundMatch.gospodarz || "").toUpperCase().trim(),
-        away: (foundMatch.gosc || "").toUpperCase().trim(),
-        czas: foundMatch.czas || foundMatch.czas_gry || foundMatch.godzina || "",
+        matchId: foundMatch.id || pinString,
+        numer_meczu: foundMatch.numer_meczu || pinString,
+        home: String(foundMatch.gospodarz || foundMatch.home || "Brak").toUpperCase().trim(),
+        away: String(foundMatch.gosc || foundMatch.away || "Brak").toUpperCase().trim(),
+        czas: finalCzas,
         liga: foundMatch.liga || "",
         createdAt: new Date(),
       });
@@ -122,18 +154,21 @@ function Garmin() {
       setMatchNumberInput("");
       fetchPins();
     } catch (error) {
-      console.error("Błąd podczas zapisywania PIN-u: ", error);
-      alert("Wystąpił błąd podczas aktywacji PIN-u.");
+      console.error("Błąd zapisywania PIN-u:", error);
+      alert(`Wystąpił błąd: ${error.message}`);
     }
   };
-
   // Ręczne generowanie PIN-u
+// Ręczne generowanie PIN-u (z domyślnym czasem 45 minut)
   const handleGenerateManualPin = async () => {
     setSuccessMessage("");
     if (!homeTeam || !awayTeam) {
       alert("Wpisz obie drużyny!");
       return;
     }
+
+    // Jeśli użytkownik nie wpisał czasu, używamy domyślnego "45"
+    const finalCzas = czasGry.trim() !== "" ? czasGry.trim() : "45";
 
     let generatedPin;
     let pinExists = true;
@@ -151,7 +186,7 @@ function Garmin() {
       await setDoc(doc(db, "watch_pins", generatedPin), {
         home: homeTeam.toUpperCase().trim(),
         away: awayTeam.toUpperCase().trim(),
-        czas: czasGry.trim(),
+        czas: finalCzas, // Zapisujemy podany czas lub domyślne "45"
         createdAt: new Date(),
       });
 
@@ -162,6 +197,46 @@ function Garmin() {
       fetchPins();
     } catch (error) {
       console.error("Błąd podczas zapisywania PIN-u: ", error);
+    }
+  };
+  // --- NOWE FUNKCJE: USUWANIE I EDYCJA ---
+
+  // Usuwanie meczu
+// Bezpieczne usuwanie TYLKO aktywnego PIN-u zegarka (baza głównych meczów zostaje nietknięta)
+const handleDeletePin = async (pinId) => {
+  if (!window.confirm(`Usuń PIN #${pinId} z zegarka?`)) return;
+
+  try {
+    // Odwołujemy się WYŁĄCZNIE do kolekcji "watch_pins"
+    await deleteDoc(doc(db, "watch_pins", pinId));
+    
+    setSuccessMessage(`Usunięto PIN #${pinId} z listy zegarka.`);
+    fetchPins(); // Odświeżamy tylko listę PIN-ów
+  } catch (error) {
+    console.error("Błąd podczas usuwania PIN-u: ", error);
+    alert("Błąd podczas usuwania PIN-u.");
+  }
+};
+
+  // Włączenie trybu edycji dla wybranego wiersza
+  const handleStartEdit = (item) => {
+    setEditingPinId(item.id);
+    setEditingTimeValue(item.czas || "");
+  };
+
+  // Zapis zmodyfikowanego czasu do Firebase
+  const handleSaveTime = async (pinId) => {
+    try {
+      const pinRef = doc(db, "watch_pins", pinId);
+      await updateDoc(pinRef, {
+        czas: editingTimeValue.trim()
+      });
+      setEditingPinId(null);
+      setEditingTimeValue("");
+      fetchPins();
+    } catch (error) {
+      console.error("Błąd podczas aktualizacji czasu: ", error);
+      alert("Nie udało się zapisać nowego czasu.");
     }
   };
 
@@ -256,7 +331,7 @@ function Garmin() {
 
       <hr className="garmin-divider" />
 
-      {/* Lista PIN-ów (max 5) */}
+      {/* Lista PIN-ów z możliwością edycji czasu i usuwania */}
       <h3 className="garmin-subtitle">Ostatnie 5 meczów z PIN-ami:</h3>
       {existingPins.length === 0 ? (
         <p className="garmin-empty">Brak aktywnych PIN-ów.</p>
@@ -268,17 +343,52 @@ function Garmin() {
                 <span className="garmin-teams">
                   <strong>{item.home}</strong> vs <strong>{item.away}</strong>
                 </span>
-                
-                {item.czas && (
-                  <span className="garmin-match-time">
-                    ⏱️ {item.czas}
-                  </span>
+
+                {/* Tryb edycji czasu dla tego wiersza */}
+                {editingPinId === item.id ? (
+                  <div className="garmin-edit-box">
+                    <input
+                      type="text"
+                      className="garmin-input-inline"
+                      value={editingTimeValue}
+                      placeholder="np. 45'"
+                      onChange={(e) => setEditingTimeValue(e.target.value)}
+                    />
+                    <button className="garmin-btn-icon save" onClick={() => handleSaveTime(item.id)} title="Zapisz">
+                      ✓
+                    </button>
+                    <button className="garmin-btn-icon cancel" onClick={() => setEditingPinId(null)} title="Anuluj">
+                      ✕
+                    </button>
+                  </div>
+                ) : (
+                  <div className="garmin-time-wrapper">
+                    <span className="garmin-match-time">
+                      ⏱️ {item.czas || "Brak czasu"}
+                    </span>
+                    <button 
+                      className="garmin-btn-icon edit" 
+                      onClick={() => handleStartEdit(item)}
+                      title="Edytuj czas"
+                    >
+                      ✏️
+                    </button>
+                  </div>
                 )}
               </div>
 
-              <span className="garmin-badge-pin">
-                PIN: {item.id}
-              </span>
+              <div className="garmin-actions">
+                <span className="garmin-badge-pin">
+                   {item.id}
+                </span>
+                <button 
+                  className="garmin-btn-icon delete" 
+                  onClick={() => handleDeletePin(item.id)}
+                  title="Usuń pozycję"
+                >
+                  🗑️
+                </button>
+              </div>
             </li>
           ))}
         </ul>

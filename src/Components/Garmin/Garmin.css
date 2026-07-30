@@ -118,7 +118,7 @@
   margin-bottom: 1.5rem;
   text-align: center;
   font-size: 1rem;
-  color: #ffffff;
+  color: #25d451;
   box-shadow: inset 0 0 10px rgba(46, 213, 115, 0.1);
 }
 
@@ -267,5 +267,126 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
+  }
+}
+/* Wiersz listy układany ściśle w jednej linii */
+.garmin-list-item-inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  background: rgba(46, 213, 115, 0.1);
+  border: 1px solid rgba(46, 213, 115, 0.25);
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+.garmin-list-item-inline:hover {
+  background: rgba(46, 213, 115, 0.18);
+  border-color: rgba(46, 213, 115, 0.45);
+}
+
+/* 1. Zespół (obcinanie tekstu, gdyby drużyny miały bardzo długie nazwy) */
+.garmin-teams-single {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #e6fffa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.garmin-teams-single strong {
+  color: #2ed573;
+}
+
+/* 2. Czas gry i edycja w linii */
+.garmin-time-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.garmin-edit-box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.garmin-input-inline {
+  width: 65px;
+  padding: 3px 6px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #2ed573;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+/* 3. Badge PIN */
+.garmin-badge-pin {
+  flex-shrink: 0;
+  background: rgba(46, 213, 115, 0.2);
+  border: 1px solid rgba(46, 213, 115, 0.4);
+  color: #34d399;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+}
+
+/* 4. Przyciski ikonowe */
+.garmin-btn-icon {
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 4px 7px;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  color: #ffffff;
+}
+
+.garmin-btn-icon:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+.garmin-btn-icon.delete:hover {
+  background: rgba(231, 76, 60, 0.4);
+  border-color: #e74c3c;
+}
+
+.garmin-btn-icon.save {
+  background: rgba(46, 213, 115, 0.3);
+  border-color: #2ed573;
+}
+
+.garmin-btn-icon.cancel {
+  background: rgba(235, 77, 75, 0.3);
+  border-color: #eb4d4b;
+}
+
+/* RWD - zmniejszenie marginesów na mniejszych ekranach */
+@media (max-width: 600px) {
+  .garmin-list-item-inline {
+    gap: 6px;
+    padding: 8px 10px;
+  }
+  
+  .garmin-teams-single {
+    font-size: 0.8rem;
+  }
+
+  .garmin-badge-pin {
+    font-size: 0.75rem;
+    padding: 3px 6px;
   }
 }
