@@ -1,0 +1,2795 @@
+{
+  "public": {
+    "druzyny": {
+      "data": {},
+      "subcollections": {
+        "info": {
+          "3": {
+            "data": {
+              "nazwa": "Kolonia Bolesławiec",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "4": {
+            "data": {
+              "nazwa": "Olsza Olszyna",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "5": {
+            "data": {
+              "nazwa": "Łużyce Lubań",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "6": {
+            "data": {
+              "nazwa": "Orzeł Gościszów",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "7": {
+            "data": {
+              "nazwa": "Granit Gierałtów",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "8": {
+            "data": {
+              "nazwa": "Granica Miłoszów",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "9": {
+            "data": {
+              "nazwa": "Parasol Wrocław",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "10": {
+            "data": {
+              "nazwa": "Jaworzanka Jawor",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "11": {
+            "data": {
+              "nazwa": "Bazalt Sulików",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "12": {
+            "data": {
+              "nazwa": "Przyszłość Dłużyna",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "13": {
+            "data": {
+              "nazwa": "LZS Brzeźnik",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "14": {
+            "data": {
+              "nazwa": "Sparta Zebrzydowa",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "15": {
+            "data": {
+              "nazwa": "Olimpia Kamienna Góra",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "16": {
+            "data": {
+              "nazwa": "Royal Biedrzychowice",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "17": {
+            "data": {
+              "nazwa": "Czarni Lwówek",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "18": {
+            "data": {
+              "nazwa": "Apis Jędrzychowice",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "19": {
+            "data": {
+              "nazwa": "Chrobry Nowogrodziec",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "20": {
+            "data": {
+              "nazwa": "KS Łomnica",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "21": {
+            "data": {
+              "nazwa": "Piast Czerwona Woda",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "22": {
+            "data": {
+              "nazwa": "LKS Ocice",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "23": {
+            "data": {
+              "nazwa": "Zjednoczeni Nowogrodziec",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "24": {
+            "data": {
+              "nazwa": "KS Milików",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "25": {
+            "data": {
+              "nazwa": "KS Czerna",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "26": {
+            "data": {
+              "nazwa": "Chmielanka Chmieleń",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "27": {
+            "data": {
+              "nazwa": "Włókniarz Leśna",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "28": {
+            "data": {
+              "nazwa": "Iskra Kochlice",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "29": {
+            "data": {
+              "nazwa": "Stare Jaroszowice",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "30": {
+            "data": {
+              "nazwa": "Chrobry Głogów",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "31": {
+            "data": {
+              "nazwa": "GKS Raciborowice",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "32": {
+            "data": {
+              "nazwa": "Granica Bogatynia",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "33": {
+            "data": {
+              "nazwa": "Łużycka Akademia Sportu",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "34": {
+            "data": {
+              "nazwa": "LZS Niwnice",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "35": {
+            "data": {
+              "nazwa": "Sudety Giebułtów",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "36": {
+            "data": {
+              "nazwa": "LZS Kościelnik",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "37": {
+            "data": {
+              "nazwa": "Włókniarz Mirsk",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "38": {
+            "data": {
+              "nazwa": "Orzeł Mysłakowice",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "39": {
+            "data": {
+              "nazwa": "Cosmos Radzimów",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "40": {
+            "data": {
+              "nazwa": "Nysa Zgorzelec",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "41": {
+            "data": {
+              "nazwa": "Victoria Jelenia Góra",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "42": {
+            "data": {
+              "nazwa": "Błęktni Studniska",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "43": {
+            "data": {
+              "nazwa": "Legend Squad Radogoszcz",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "45": {
+            "data": {
+              "nazwa": "GKS Warta Bolesławiecka",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "46": {
+            "data": {
+              "nazwa": "GKS Gromadka",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "47": {
+            "data": {
+              "nazwa": "Piast Zawidów",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "49": {
+            "data": {
+              "nazwa": "Górnik Polkowice",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "50": {
+            "data": {
+              "nazwa": "Orzeł Platerówka",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "51": {
+            "data": {
+              "nazwa": "Stella Lubomierz",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "52": {
+            "data": {
+              "nazwa": "Victoria Ruszów",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "53": {
+            "data": {
+              "nazwa": "Iskra Łagów",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "54": {
+            "data": {
+              "nazwa": "Leśnik Osiecznica",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "55": {
+            "data": {
+              "nazwa": "KS Czerna",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "56": {
+            "data": {
+              "nazwa": "Football Academy",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "57": {
+            "data": {
+              "nazwa": "Hutnik Pieńsk",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "58": {
+            "data": {
+              "nazwa": "GKS Tomaszów",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "59": {
+            "data": {
+              "nazwa": "WKS Żarki Średnie",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "60": {
+            "data": {
+              "nazwa": "Gryf Gryfów",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "61": {
+            "data": {
+              "nazwa": "Moto-Jelcz Oława",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "62": {
+            "data": {
+              "nazwa": "Lotnik Jeżów Sudecki",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "63": {
+            "data": {
+              "nazwa": "BKS Bolesławiec",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "64": {
+            "data": {
+              "nazwa": "Olimpia Kowary",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "65": {
+            "data": {
+              "nazwa": "Majdan Bolesławice",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "66": {
+            "data": {
+              "nazwa": "Korona Radostów",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "67": {
+            "data": {
+              "nazwa": "Górnik Węgliniec",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "68": {
+            "data": {
+              "nazwa": "Zryw Ubocze",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "69": {
+            "data": {
+              "nazwa": "KKS Jelenia Góra",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "70": {
+            "data": {
+              "nazwa": "GKS Iwiny",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "71": {
+            "data": {
+              "nazwa": "LZS Nowa",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "72": {
+            "data": {
+              "nazwa": "LKS Mierzwin",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "73": {
+            "data": {
+              "nazwa": "KS Kotliska",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "74": {
+            "data": {
+              "nazwa": "Pogoń Świerzawa",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "75": {
+            "data": {
+              "nazwa": "Dąbrowa Bolesławiecka",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "76": {
+            "data": {
+              "nazwa": "Bielawianka Bielawa",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "78": {
+            "data": {
+              "nazwa": "Piast Wykroty",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "79": {
+            "data": {
+              "nazwa": "Znicz Kruszyn",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "80": {
+            "data": {
+              "nazwa": "Miedź Legnica",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "81": {
+            "data": {
+              "nazwa": "Śląsk Wrocław",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "82": {
+            "data": {
+              "nazwa": "Lechia Zielona Góra",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "83": {
+            "data": {
+              "nazwa": "Twardy Świętoszów",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "84": {
+            "data": {
+              "nazwa": "Fatma Pobiedna",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "85": {
+            "data": {
+              "nazwa": "KS Maciejowa",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "86": {
+            "data": {
+              "nazwa": "Juvenia Rybnica",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "87": {
+            "data": {
+              "nazwa": "UKS Gminy Miękinia",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "88": {
+            "data": {
+              "nazwa": "KS Górnik Sosnowiec",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "89": {
+            "data": {
+              "nazwa": "Chaos Wrocław",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "90": {
+            "data": {
+              "nazwa": "KU AZS UZ Zielona Góra",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "91": {
+            "data": {
+              "nazwa": "GKS Mirków-Długołęka",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "92": {
+            "data": {
+              "nazwa": "Lechia Dzierżoniów",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "93": {
+            "data": {
+              "nazwa": "Błyskawica Gać ",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "94": {
+            "data": {
+              "nazwa": "LKS Kraśnik Dolny",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "95": {
+            "data": {
+              "nazwa": "Prochowiczanka Prochowice ",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "96": {
+            "data": {
+              "nazwa": "Piast Gliwice",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "97": {
+            "data": {
+              "nazwa": "KS Włodzice",
+              "platnosc ": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "98": {
+            "data": {
+              "nazwa": "Górnik Złotoryja ",
+              "platnosc ": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "99": {
+            "data": {
+              "nazwa": "Piast Nowa Ruda",
+              "platnosc": "edelegacja "
+            },
+            "subcollections": {}
+          },
+          "100": {
+            "data": {
+              "nazwa": "Rybak Parowa",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "101": {
+            "data": {
+              "nazwa": "Bazalt Strzegom",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "102": {
+            "data": {
+              "nazwa": "LZS Skalnik Rębiszów ",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "103": {
+            "data": {
+              "nazwa": "Kwisa Nowogrodziec",
+              "platnosc": "delegacja"
+            },
+            "subcollections": {}
+          },
+          "104": {
+            "data": {
+              "nazwa": "GKS Otok",
+              "platnosc": "edelgacja"
+            },
+            "subcollections": {}
+          },
+          "105": {
+            "data": {
+              "nazwa": "Orzeł Wojcieszów ",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "106": {
+            "data": {
+              "nazwa": "Skalnik Czarny Bor ",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "107": {
+            "data": {
+              "nazwa": "Lechia",
+              "platnosc": "Piechowice"
+            },
+            "subcollections": {}
+          },
+          "108": {
+            "data": {
+              "nazwa": "Zbylut Zbylutów ",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "111": {
+            "data": {
+              "nazwa": "Piast Żmigród",
+              "platnosc": "edelegacja"
+            },
+            "subcollections": {}
+          },
+          "112": {
+            "data": {
+              "nazwa": "MAKO Lubań",
+              "platnosc ": "edelegacja "
+            },
+            "subcollections": {}
+          },
+          "113": {
+            "data": {
+              "nazwa": "Ślęza Wroclaw"
+            },
+            "subcollections": {}
+          },
+          "115": {
+            "data": {
+              "nazwa": "Bielany Biedrzychowice"
+            },
+            "subcollections": {}
+          },
+          "116": {
+            "data": {
+              "nazwa": "WKS Wierzbice",
+              "platnosc ": "edelegacja"
+            },
+            "subcollections": {}
+          }
+        }
+      }
+    },
+    "poziom": {
+      "data": {},
+      "subcollections": {
+        "info": {
+          "1": {
+            "data": {
+              "nazwa": "A SG",
+              "kasa": 199,
+              "podatek": 21
+            },
+            "subcollections": {}
+          },
+          "2": {
+            "data": {
+              "nazwa": "A SA",
+              "kasa": 154,
+              "podatek": 16
+            },
+            "subcollections": {}
+          },
+          "3": {
+            "data": {
+              "nazwa": "B SG",
+              "kasa": 176,
+              "podatek": 19
+            },
+            "subcollections": {}
+          },
+          "4": {
+            "data": {
+              "nazwa": "B SA",
+              "kasa": 131,
+              "podatek": 14
+            },
+            "subcollections": {}
+          },
+          "5": {
+            "data": {
+              "nazwa": "Okręgówka SA",
+              "kasa": 212,
+              "podatek": 23
+            },
+            "subcollections": {}
+          },
+          "6": {
+            "data": {
+              "nazwa": "Okręgówka SG",
+              "kasa": 262,
+              "podatek": 28
+            },
+            "subcollections": {}
+          },
+          "7": {
+            "data": {
+              "nazwa": "IV Liga SA",
+              "kasa": 240,
+              "podatek": 25
+            },
+            "subcollections": {}
+          },
+          "8": {
+            "data": {
+              "nazwa": "LDJ Starszych SG",
+              "kasa": 185,
+              "podatek": 20
+            },
+            "subcollections": {}
+          },
+          "9": {
+            "data": {
+              "nazwa": "LDJ Starszych SA",
+              "kasa": 149,
+              "podatek": 16
+            },
+            "subcollections": {}
+          },
+          "10": {
+            "data": {
+              "nazwa": "LDJ Młodszych SG",
+              "kasa": 176,
+              "podatek": 19
+            },
+            "subcollections": {}
+          },
+          "11": {
+            "data": {
+              "nazwa": "LDJ Młodszych SA",
+              "kasa": 140,
+              "podatek": 15
+            },
+            "subcollections": {}
+          },
+          "12": {
+            "data": {
+              "nazwa": "O Juniorów SG",
+              "kasa": 136,
+              "podatek": 14
+            },
+            "subcollections": {}
+          },
+          "13": {
+            "data": {
+              "nazwa": "O juniorów SA",
+              "kasa": 104,
+              "podatek": 15
+            },
+            "subcollections": {}
+          },
+          "14": {
+            "data": {
+              "nazwa": "O juniorów młodszych SG",
+              "kasa": 122,
+              "podatek": 13
+            },
+            "subcollections": {}
+          },
+          "15": {
+            "data": {
+              "nazwa": "O juniorów młodszych SA",
+              "kasa": 95,
+              "podatek": 10
+            },
+            "subcollections": {}
+          },
+          "16": {
+            "data": {
+              "nazwa": "Wojewódzka młodzik/trampkarz SG",
+              "kasa": 122,
+              "podatek": 13
+            },
+            "subcollections": {}
+          },
+          "17": {
+            "data": {
+              "nazwa": "Wojewódzka młodzik/trampkarz SA",
+              "kasa": 99,
+              "podatek": 11
+            },
+            "subcollections": {}
+          },
+          "18": {
+            "data": {
+              "nazwa": "Trampkarz",
+              "podatek": 12,
+              "kasa": 113
+            },
+            "subcollections": {}
+          },
+          "19": {
+            "data": {
+              "nazwa": "Młodzik",
+              "kasa": 95,
+              "podatek": 10
+            },
+            "subcollections": {}
+          },
+          "20": {
+            "data": {
+              "nazwa": "CLJ U17",
+              "kasa": 226,
+              "podatek": 28
+            },
+            "subcollections": {}
+          },
+          "21": {
+            "data": {
+              "nazwa": "Czasowy II Liga Futsalu",
+              "kasa": 200,
+              "podatek": 24
+            },
+            "subcollections": {}
+          },
+          "22": {
+            "data": {
+              "kasa": "250",
+              "nazwa": "1 Liga Kobiet Futsal",
+              "podatek": "26"
+            },
+            "subcollections": {}
+          },
+          "23": {
+            "data": {
+              "kasa": "200",
+              "nazwa": "CLJ U-15",
+              "podatek": "21"
+            },
+            "subcollections": {}
+          },
+          "24": {
+            "data": {
+              "kasa": "194",
+              "nazwa": "B jeden",
+              "podatek": "21"
+            },
+            "subcollections": {}
+          }
+        }
+      }
+    },
+    "sedziowie": {
+      "data": {},
+      "subcollections": {
+        "info": {
+          "4": {
+            "data": {
+              "imie": "Maciej Kwiecień"
+            },
+            "subcollections": {}
+          },
+          "5": {
+            "data": {
+              "imie": "Maciej Michałeczko"
+            },
+            "subcollections": {}
+          },
+          "6": {
+            "data": {
+              "imie": "Maciej Michałeczko"
+            },
+            "subcollections": {}
+          },
+          "7": {
+            "data": {
+              "imie": "Aneta Bargiel"
+            },
+            "subcollections": {}
+          },
+          "8": {
+            "data": {
+              "imie": "Sławomir Turkiewicz"
+            },
+            "subcollections": {}
+          },
+          "9": {
+            "data": {
+              "imie": "Igor Jaśkiewicz"
+            },
+            "subcollections": {}
+          },
+          "11": {
+            "data": {
+              "imie": "Bartek Gajewnik"
+            },
+            "subcollections": {}
+          },
+          "12": {
+            "data": {
+              "imie": "Marcin Kozioł"
+            },
+            "subcollections": {}
+          },
+          "13": {
+            "data": {
+              "imie": "Piotr Bajer"
+            },
+            "subcollections": {}
+          },
+          "14": {
+            "data": {
+              "imie": "Tomasz Sobol"
+            },
+            "subcollections": {}
+          },
+          "15": {
+            "data": {
+              "imie": "Ja"
+            },
+            "subcollections": {}
+          },
+          "16": {
+            "data": {
+              "imie": "Filip Grzesiak"
+            },
+            "subcollections": {}
+          },
+          "17": {
+            "data": {
+              "imie": "Marcin Zapiór"
+            },
+            "subcollections": {}
+          },
+          "18": {
+            "data": {
+              "imie": "Sławomir Dmuchowski"
+            },
+            "subcollections": {}
+          },
+          "19": {
+            "data": {
+              "imie": "Krystian Ołota"
+            },
+            "subcollections": {}
+          },
+          "20": {
+            "data": {
+              "imie": "Sławomir Wydysz"
+            },
+            "subcollections": {}
+          },
+          "21": {
+            "data": {
+              "imie": "Maciej Dobrowolski"
+            },
+            "subcollections": {}
+          },
+          "22": {
+            "data": {
+              "imie": "Konrad Małachowski"
+            },
+            "subcollections": {}
+          },
+          "23": {
+            "data": {
+              "imie": "Kuba Kowalczyk"
+            },
+            "subcollections": {}
+          },
+          "24": {
+            "data": {
+              "imie": "Kacper Kłobut"
+            },
+            "subcollections": {}
+          },
+          "25": {
+            "data": {
+              "imie": "Bartosz Sikora"
+            },
+            "subcollections": {}
+          },
+          "26": {
+            "data": {
+              "imie": "Krystian Pałasiuk "
+            },
+            "subcollections": {}
+          }
+        }
+      }
+    }
+  },
+  "users": {
+    "Wp9V1EVxiDPlQjWFNlmBSsp3uLB3": {
+      "data": {},
+      "subcollections": {
+        "mecze": {
+          "0Udl2YGZzAsgp5XN7taO": {
+            "data": {
+              "id_mecz": "49d03a56-1a28-4567-96d6-d3fcb5844fbb",
+              "gospodarz": "WKS Żarki Średnie",
+              "gosc": "Górnik Węgliniec",
+              "liga": "A SG",
+              "kasa": 199,
+              "podatek": 21,
+              "data": "2026-05-30",
+              "glowny": "Ja",
+              "numer_meczu": 4687858,
+              "delegacja": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-02T08:58:00.495Z",
+              "zaplacone": "T",
+              "zolteKartkiGosc": 2,
+              "zolteKartkiGospodarz": 2,
+              "wynikGosc": 2,
+              "wynikGospodarz": 0
+            },
+            "subcollections": {}
+          },
+          "0bcXNAYZQwVdL5SFxzc9": {
+            "data": {
+              "id_mecz": "6ef2bfc3-b748-4fd1-8058-06374f05c6dc",
+              "gospodarz": "GKS Otok",
+              "gosc": "Leśnik Osiecznica",
+              "liga": "B SA",
+              "kasa": 131,
+              "podatek": 14,
+              "data": "2026-06-04",
+              "glowny": "Igor Jaśkiewicz",
+              "numer_meczu": 4688753,
+              "delegacja": 0,
+              "zaplacone": "",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-02T09:01:44.016Z"
+            },
+            "subcollections": {}
+          },
+          "0pw6lu9btSjxPByBLzUj": {
+            "data": {
+              "id_mecz": "75c5d2f9-da2b-4405-bb5b-8ef779752619",
+              "gospodarz": "Victoria Jelenia Góra",
+              "gosc": "GKS Warta Bolesławiecka",
+              "liga": "Okręgówka SG",
+              "kasa": 262,
+              "podatek": 28,
+              "data": "2026-04-25",
+              "glowny": "Ja",
+              "numer_meczu": 4686568,
+              "delegacja": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-02T17:42:23.410Z",
+              "zolteKartkiGosc": 2,
+              "zolteKartkiGospodarz": 1,
+              "wynikGosc": 1,
+              "wynikGospodarz": 0,
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "2djpRKmA3S98WDe4xaNM": {
+            "data": {
+              "id_mecz": "da6c1eba-8158-4fd9-bb88-d137c47e06f3",
+              "gospodarz": "Orzeł Mysłakowice",
+              "gosc": "Gryf Gryfów",
+              "liga": "Okręgówka SG",
+              "kasa": 262,
+              "podatek": 28,
+              "data": "2026-05-10",
+              "glowny": "Ja",
+              "numer_meczu": 4686548,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-07T19:30:43.591Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "3FEBukvMUvQHkFtGEjXk": {
+            "data": {
+              "id_mecz": "a858491c-3595-46ad-b52a-e4a462c7c9f9",
+              "gospodarz": "Nysa Zgorzelec",
+              "gosc": "Czarni Lwówek",
+              "liga": "Młodzik",
+              "kasa": 95,
+              "podatek": 10,
+              "data": "2026-06-13",
+              "glowny": "Ja",
+              "numer_meczu": 4758018,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "runda": "wiosenna",
+              "sezon": "2025/2026",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-13T07:40:06.578Z"
+            },
+            "subcollections": {}
+          },
+          "3OMn6QtXjLsK0pJxGxd6": {
+            "data": {
+              "id_mecz": "3f247cf0-585c-4573-b794-3b7fb4c359db",
+              "gospodarz": "Włókniarz Leśna",
+              "gosc": "Olimpia Kamienna Góra",
+              "liga": "Okręgówka SG",
+              "kasa": 262,
+              "podatek": 28,
+              "data": "2026-05-23",
+              "glowny": "Ja",
+              "numer_meczu": 4686601,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-23T09:08:23.731Z",
+              "zolteKartkiGosc": 2,
+              "zolteKartkiGospodarz": 2,
+              "wynikGosc": 0,
+              "wynikGospodarz": 4
+            },
+            "subcollections": {}
+          },
+          "514qGzLYjqJx1cNmV7C2": {
+            "data": {
+              "id_mecz": "50380477-6269-4a10-8154-e3108364881b",
+              "gospodarz": "Czarni Lwówek",
+              "gosc": "Górnik Węgliniec",
+              "liga": "A SG",
+              "kasa": 199,
+              "podatek": 21,
+              "data": "2026-06-14",
+              "glowny": "Ja",
+              "numer_meczu": 4687871,
+              "delegacja": 0,
+              "runda": "wiosenna",
+              "sezon": "2025/2026",
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-18T08:15:19.948Z",
+              "zolteKartkiGosc": 3,
+              "zolteKartkiGospodarz": 2,
+              "wynikGosc": 2,
+              "wynikGospodarz": 2,
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "7OgsN1gXlSzjifd0uqot": {
+            "data": {
+              "id_mecz": "23cf4d14-c248-4d58-b377-df1e7b20d2c6",
+              "gospodarz": "Łużyce Lubań",
+              "gosc": "Ślęza Wroclaw",
+              "liga": "LDJ Młodszych SG",
+              "kasa": 176,
+              "podatek": 19,
+              "data": "2026-06-13",
+              "glowny": "Ja",
+              "numer_meczu": 4753957,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "runda": "wiosenna",
+              "sezon": "2025/2026",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-13T07:38:11.527Z"
+            },
+            "subcollections": {}
+          },
+          "89Kwnja5yqlgCf3nOKLD": {
+            "data": {
+              "id_mecz": "6d7fca83-b310-4800-a044-3a26cd1f289e",
+              "gospodarz": "Kolonia Bolesławiec",
+              "gosc": "Leśnik Osiecznica",
+              "liga": "Trampkarz",
+              "kasa": 99,
+              "podatek": 12,
+              "data": "2026-03-31",
+              "glowny": "Ja",
+              "numer_meczu": 4767975,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-03-31T12:54:42.690Z"
+            },
+            "subcollections": {}
+          },
+          "8Cmw8wAjSUz2JT3NsvQF": {
+            "data": {
+              "id_mecz": "cbbc6917-93ef-4e27-938c-b9f5853d2fb2",
+              "gospodarz": "GKS Mirków-Długołęka",
+              "gosc": "Lechia Dzierżoniów",
+              "liga": "IV Liga SA",
+              "kasa": 240,
+              "podatek": 25,
+              "data": "2026-03-07",
+              "glowny": "Konrad Małachowski",
+              "numer_meczu": 4664796,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-03-14T07:59:28.266Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "8W3ztNUFIpAw6DnmCjvr": {
+            "data": {
+              "id_mecz": "cb8f84dc-fd03-44b7-92b2-5becc65bd420",
+              "gospodarz": "Orzeł Gościszów",
+              "gosc": "Football Academy",
+              "liga": "Młodzik",
+              "kasa": 95,
+              "podatek": 10,
+              "data": "2026-05-15",
+              "glowny": "Ja",
+              "numer_meczu": 4761661,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-15T13:33:29.508Z"
+            },
+            "subcollections": {}
+          },
+          "8j7SuyjvlJOAeDeXQ3zl": {
+            "data": {
+              "id_mecz": "e746c501-793b-4024-bdcf-fc309f145a77",
+              "gospodarz": "Kolonia Bolesławiec",
+              "gosc": "WKS Wierzbice",
+              "liga": "Młodzik",
+              "kasa": 95,
+              "podatek": 10,
+              "data": "2026-06-30",
+              "glowny": "Maciej Kwiecień",
+              "numer_meczu": 4724885,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "runda": "wiosenna",
+              "sezon": "2025/2026",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-30T09:06:49.361Z"
+            },
+            "subcollections": {}
+          },
+          "9IkQFnXVpnvPeNo99k6f": {
+            "data": {
+              "id_mecz": "114aae50-70e9-4e53-a9f6-bbe6ec5d5e30",
+              "gospodarz": "Prochowiczanka Prochowice ",
+              "gosc": "Moto-Jelcz Oława",
+              "liga": "IV Liga SA",
+              "kasa": 240,
+              "podatek": 25,
+              "data": "2026-03-28",
+              "glowny": "Krystian Ołota",
+              "numer_meczu": 4664823,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-03-28T09:40:52.338Z"
+            },
+            "subcollections": {}
+          },
+          "A3CFt7IxXJSU2QvJiNw7": {
+            "data": {
+              "id_mecz": "38bd41a2-ba29-4cda-8e80-0f4f85ac0f46",
+              "gospodarz": "Stare Jaroszowice",
+              "gosc": "LKS Mierzwin",
+              "liga": "A SA",
+              "kasa": 154,
+              "podatek": 16,
+              "data": "2026-04-19",
+              "glowny": "Maciej Michałeczko",
+              "numer_meczu": 4687818,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-04-19T18:50:45.185Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "ATtWrBTuQVj8sDnwb34t": {
+            "data": {
+              "id_mecz": "faf7f175-8fac-444b-9b25-750a49a0a068",
+              "gospodarz": "Gryf Gryfów",
+              "gosc": "Lechia",
+              "liga": "Okręgówka SA",
+              "kasa": 212,
+              "podatek": 23,
+              "data": "2026-06-02",
+              "glowny": "Marcin Zapiór",
+              "numer_meczu": 4686612,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-02T09:01:08.187Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "AjRiCDmNAXkMpyyET8LS": {
+            "data": {
+              "id_mecz": "b6d7abeb-b510-4f95-a1e5-315978150af3",
+              "gospodarz": "KU AZS UZ Zielona Góra",
+              "gosc": "Włókniarz Leśna",
+              "liga": "1 Liga Kobiet Futsal",
+              "kasa": "250",
+              "podatek": "26",
+              "data": "2026-03-08",
+              "glowny": "Konrad Małachowski",
+              "numer_meczu": 4656009,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-03-14T08:02:37.412Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "C044nqq6WPhJcOsKIH8B": {
+            "data": {
+              "id_mecz": "708c9e46-e63b-4640-9630-761abde8f341",
+              "gospodarz": "Kolonia Bolesławiec",
+              "gosc": "Chrobry Nowogrodziec",
+              "liga": "Młodzik",
+              "kasa": 95,
+              "podatek": 10,
+              "data": "2026-05-05",
+              "glowny": "Ja",
+              "numer_meczu": 4761189,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-05T13:48:22.810Z"
+            },
+            "subcollections": {}
+          },
+          "CEKMyl1NaFxCjsh3OmFC": {
+            "data": {
+              "id_mecz": "317a1b63-f506-4e24-bdcf-0cca6c558578",
+              "gospodarz": "Przyszłość Dłużyna",
+              "gosc": "Piast Czerwona Woda",
+              "liga": "B SA",
+              "kasa": 131,
+              "podatek": 14,
+              "data": "2026-05-03",
+              "glowny": "Ja",
+              "numer_meczu": 4688843,
+              "delegacja": 1,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-02T17:49:22.622Z",
+              "zaplacone": "T",
+              "czerwoneKartkiGospodarz": 1,
+              "zolteKartkiGospodarz": 3,
+              "wynikGosc": 7,
+              "wynikGospodarz": 0
+            },
+            "subcollections": {}
+          },
+          "DfI5dqZslp7b1wLUKnPb": {
+            "data": {
+              "id_mecz": "4b68660e-f897-4b7a-8fcb-4c7354c00fbf",
+              "gospodarz": "KS Kotliska",
+              "gosc": "Zbylut Zbylutów ",
+              "liga": "B jeden",
+              "kasa": "194",
+              "podatek": "21",
+              "data": "2026-06-07",
+              "glowny": "Ja",
+              "numer_meczu": 4688699,
+              "delegacja": 0,
+              "zolteKartkiGospodarz": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-03T12:57:41.716Z",
+              "zolteKartkiGosc": 2,
+              "wynikGosc": 1,
+              "wynikGospodarz": 7,
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "DiBZvpEbOdFoSPEhhdmk": {
+            "data": {
+              "id_mecz": "9a553f15-6316-494a-a01f-6ec384a0ea58",
+              "gospodarz": "Kolonia Bolesławiec",
+              "gosc": "WKS Żarki Średnie",
+              "liga": "A SG",
+              "kasa": 199,
+              "podatek": 21,
+              "data": "2026-06-07",
+              "glowny": "Ja",
+              "numer_meczu": 4687865,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-07T07:26:25.199Z",
+              "zolteKartkiGosc": 1,
+              "zolteKartkiGospodarz": 1,
+              "wynikGosc": 3,
+              "wynikGospodarz": 6
+            },
+            "subcollections": {}
+          },
+          "FfeG1DLBJA7bLgFoOPC5": {
+            "data": {
+              "id_mecz": "75e6956c-71f8-4270-b968-2bd3a2e31565",
+              "gospodarz": "Chaos Wrocław",
+              "gosc": "KU AZS UZ Zielona Góra",
+              "liga": "1 Liga Kobiet Futsal",
+              "kasa": "250",
+              "podatek": "26",
+              "data": "2026-03-15",
+              "glowny": "Igor Jaśkiewicz",
+              "numer_meczu": 4656128,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-03-14T08:05:39.632Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "Fup7GGvn6Ba2Dotg0sXQ": {
+            "data": {
+              "id_mecz": "088507cf-2dc3-46b2-886a-6a92672f9e75",
+              "gospodarz": "Gryf Gryfów",
+              "gosc": "Hutnik Pieńsk",
+              "liga": "Okręgówka SA",
+              "kasa": 212,
+              "podatek": 23,
+              "data": "2026-05-16",
+              "glowny": "Igor Jaśkiewicz",
+              "numer_meczu": 4686594,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-23T09:03:34.342Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "GftcRJwHU1brdVV1y8rF": {
+            "data": {
+              "id_mecz": "3494e72f-4558-4684-8d83-6b81d0846af7",
+              "gospodarz": "Rybak Parowa",
+              "gosc": "Majdan Bolesławice",
+              "liga": "B SA",
+              "kasa": 131,
+              "podatek": 14,
+              "data": "2026-06-20",
+              "glowny": "Kuba Kowalczyk",
+              "numer_meczu": 4688804,
+              "delegacja": 1,
+              "runda": "wiosenna",
+              "sezon": "2025/2026",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-18T08:17:00.623Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "HYrgU1MuWWB3mYY0dgMm": {
+            "data": {
+              "id_mecz": "410667d9-c682-4e4b-b52d-335f0eaf2411",
+              "gospodarz": "Kwisa Nowogrodziec",
+              "gosc": "Twardy Świętoszów",
+              "liga": "Trampkarz",
+              "kasa": 113,
+              "podatek": 12,
+              "data": "2026-05-23",
+              "glowny": "Ja",
+              "numer_meczu": 4768009,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-23T08:55:37.418Z"
+            },
+            "subcollections": {}
+          },
+          "I2RsCGAfaohBkRpaAYcJ": {
+            "data": {
+              "id_mecz": "50ffa818-1255-4841-a5f1-f8e8ddb8fb5e",
+              "gospodarz": "BKS Bolesławiec",
+              "gosc": "Łużyce Lubań",
+              "liga": "Wojewódzka młodzik/trampkarz SA",
+              "kasa": 99,
+              "podatek": 11,
+              "data": "2026-03-21",
+              "glowny": "Filip Grzesiak",
+              "numer_meczu": 4756643,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-03-18T18:09:40.653Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "JTDw53b9cvGUubbluLiF": {
+            "data": {
+              "id_mecz": "30f62f7d-9cf0-4a93-aa5e-51bd3193744c",
+              "gospodarz": "Bazalt Strzegom",
+              "gosc": "Górnik Złotoryja ",
+              "liga": "IV Liga SA",
+              "kasa": 240,
+              "podatek": 25,
+              "data": "2026-04-18",
+              "glowny": "Krystian Ołota",
+              "numer_meczu": 4664858,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-02T17:41:23.681Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "L4C7eBxZ6HRzX36bcSRg": {
+            "data": {
+              "id_mecz": "aaf1568d-150e-47ff-bf4c-a66a5183577c",
+              "gospodarz": "Rybak Parowa",
+              "gosc": "KS Czerna",
+              "liga": "B SG",
+              "kasa": 176,
+              "podatek": 19,
+              "data": "2026-05-23",
+              "glowny": "Ja",
+              "numer_meczu": 4688774,
+              "delegacja": 1,
+              "createdAt": "2026-05-23T09:09:50.139Z",
+              "zolteKartkiGosc": 1,
+              "czerwoneKartkiGosc": 1,
+              "czerwoneKartkiGospodarz": 1,
+              "zolteKartkiGospodarz": 4,
+              "zaplacone": "T",
+              "wynikGosc": 1,
+              "wynikGospodarz": 4
+            },
+            "subcollections": {}
+          },
+          "LJdFLwjXiHhIZxO6fhHg": {
+            "data": {
+              "id_mecz": "b5bbb7a8-5b96-4557-86e0-cb035c53d2e7",
+              "gospodarz": "Orzeł Gościszów",
+              "gosc": "GKS Tomaszów",
+              "liga": "Młodzik",
+              "kasa": 95,
+              "podatek": 10,
+              "data": "2026-04-17",
+              "glowny": "Ja",
+              "numer_meczu": 4761648,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-04-13T09:40:15.573Z"
+            },
+            "subcollections": {}
+          },
+          "Mvgjzb9O7Ii035LSsUhh": {
+            "data": {
+              "id_mecz": "25136132-8e06-4562-859a-65b312e04098",
+              "gospodarz": "GKS Tomaszów",
+              "gosc": "Twardy Świętoszów",
+              "liga": "Młodzik",
+              "kasa": 95,
+              "podatek": 10,
+              "data": "2026-04-10",
+              "glowny": "Ja",
+              "numer_meczu": 4761640,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-04-10T11:08:22.197Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "NI8xSSjTTMyEI9EYibgp": {
+            "data": {
+              "id_mecz": "09f69fcc-fc9e-49b0-8fd0-956f4a2bab01",
+              "gospodarz": "BKS Bolesławiec",
+              "gosc": "Łużyce Lubań",
+              "liga": "Młodzik",
+              "kasa": 95,
+              "podatek": 10,
+              "data": "2026-05-25",
+              "glowny": "Ja",
+              "numer_meczu": 4761209,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-25T14:01:08.018Z"
+            },
+            "subcollections": {}
+          },
+          "PU9NMHvnzLcMathSQmDp": {
+            "data": {
+              "id_mecz": "3ee08e9f-1091-481b-a851-b45fc485ac24",
+              "gospodarz": "GKS Tomaszów",
+              "gosc": "Górnik Węgliniec",
+              "liga": "A SG",
+              "kasa": 199,
+              "podatek": 21,
+              "data": "2026-05-02",
+              "glowny": "Ja",
+              "numer_meczu": 4687832,
+              "delegacja": 0,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-02T17:46:57.771Z",
+              "wynikGosc": 6,
+              "wynikGospodarz": 0,
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "PhFHDNxM0z2L1CtGYeeL": {
+            "data": {
+              "id_mecz": "24bd8f4b-42fe-451d-ac26-8c863ba64f32",
+              "gospodarz": "GKS Warta Bolesławiecka",
+              "gosc": "Włókniarz Mirsk",
+              "liga": "Okręgówka SA",
+              "kasa": 212,
+              "podatek": 23,
+              "data": "2026-04-04",
+              "glowny": "Bartosz Sikora",
+              "numer_meczu": 4686540,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-04-04T10:39:13.483Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "PkxWU1ixWtQu2yTm7WGr": {
+            "data": {
+              "id_mecz": "a87a37b7-40db-41cc-94ab-3506064f96d6",
+              "gospodarz": "Orzeł Gościszów",
+              "gosc": "Royal Biedrzychowice",
+              "liga": "B SG",
+              "kasa": 176,
+              "podatek": 19,
+              "data": "2026-04-26",
+              "glowny": "Ja",
+              "numer_meczu": 4688658,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "czerwoneKartkiGospodarz": 0,
+              "createdAt": "2026-04-26T08:08:25.488Z",
+              "zolteKartkiGosc": 2,
+              "czerwoneKartkiGosc": 1,
+              "zolteKartkiGospodarz": 1,
+              "wynikGosc": 1,
+              "wynikGospodarz": 2
+            },
+            "subcollections": {}
+          },
+          "R0zNROu6qpDKj1msRA8v": {
+            "data": {
+              "id_mecz": "6f575dae-0f26-40cc-b72f-7c19b3edd780",
+              "gospodarz": "Hutnik Pieńsk",
+              "gosc": "GKS Warta Bolesławiecka",
+              "liga": "Okręgówka SG",
+              "kasa": 262,
+              "podatek": 28,
+              "data": "2026-06-06",
+              "glowny": "Ja",
+              "numer_meczu": 4686613,
+              "delegacja": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-03T12:54:08.546Z",
+              "zolteKartkiGosc": 4,
+              "zolteKartkiGospodarz": 1,
+              "wynikGosc": 2,
+              "wynikGospodarz": 4,
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "RGrMFNwFcgaflclhl54P": {
+            "data": {
+              "id_mecz": "7a365deb-7881-4638-8f2e-f0e9981c7486",
+              "gospodarz": "Iskra Łagów",
+              "gosc": "Korona Radostów",
+              "liga": "A SG",
+              "kasa": 199,
+              "podatek": 21,
+              "data": "2026-04-19",
+              "glowny": "Ja",
+              "numer_meczu": 4687575,
+              "delegacja": 0,
+              "zolteKartkiGospodarz": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-04-19T18:49:59.748Z",
+              "zolteKartkiGosc": 1,
+              "wynikGosc": 0,
+              "wynikGospodarz": 1,
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "SGySge1mcTYr9PpvYDfo": {
+            "data": {
+              "id_mecz": "84e26bbd-d980-49d1-9584-6404cd6f0524",
+              "gospodarz": "Błęktni Studniska",
+              "gosc": "Olsza Olszyna",
+              "liga": "A SG",
+              "kasa": 199,
+              "podatek": 21,
+              "data": "2026-05-24",
+              "glowny": "Ja",
+              "numer_meczu": 4687604,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-25T14:02:09.327Z",
+              "zolteKartkiGosc": 1,
+              "zolteKartkiGospodarz": 4,
+              "wynikGosc": 4,
+              "wynikGospodarz": 0
+            },
+            "subcollections": {}
+          },
+          "TFn5znzMAtRXox7kfOik": {
+            "data": {
+              "id_mecz": "884aa965-3b2e-463c-ae7f-0120cb8ae81e",
+              "gospodarz": "GKS Gromadka",
+              "gosc": "Olimpia Kamienna Góra",
+              "liga": "Młodzik",
+              "kasa": 95,
+              "podatek": 10,
+              "data": "2026-05-12",
+              "glowny": "Ja",
+              "numer_meczu": 4770190,
+              "delegacja": 1,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-13T14:12:24.525Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "Tvs6zDYNwW8WzCtqoVlt": {
+            "data": {
+              "id_mecz": "4de1304d-dcdc-489a-bbea-66f872f9bca4",
+              "gospodarz": "WKS Wierzbice",
+              "gosc": "Iskra Kochlice",
+              "liga": "IV Liga SA",
+              "kasa": 240,
+              "podatek": 25,
+              "data": "2026-06-17",
+              "glowny": "Konrad Małachowski",
+              "numer_meczu": 4877477,
+              "delegacja": 0,
+              "zaplacone": "",
+              "runda": "wiosenna",
+              "sezon": "2025/2026",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-18T08:16:02.487Z"
+            },
+            "subcollections": {}
+          },
+          "Uf3GkaZV16WgIv5TT1rt": {
+            "data": {
+              "id_mecz": "b2ae5709-e856-478a-97c0-a0fe1409b18f",
+              "gospodarz": "GKS Tomaszów",
+              "gosc": "Football Academy",
+              "liga": "Młodzik",
+              "kasa": 95,
+              "podatek": 10,
+              "data": "2026-05-22",
+              "glowny": "Ja",
+              "numer_meczu": 4761667,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-23T09:07:15.118Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "UrbA7MsZDNgBoCREuonW": {
+            "data": {
+              "id_mecz": "38def148-f38a-4044-b513-8253e1c1dc01",
+              "gospodarz": "Łużyce Lubań",
+              "gosc": "Moto-Jelcz Oława",
+              "liga": "LDJ Młodszych SG",
+              "kasa": 176,
+              "podatek": 19,
+              "data": "2026-06-03",
+              "glowny": "Ja",
+              "numer_meczu": 4753942,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-03T12:53:33.423Z"
+            },
+            "subcollections": {}
+          },
+          "V9SHGD46QMe89Gya5q4n": {
+            "data": {
+              "id_mecz": "a37d7e70-df92-400d-98a9-4bc2419e2f9f",
+              "gospodarz": "Majdan Bolesławice",
+              "gosc": "Znicz Kruszyn",
+              "liga": "B SG",
+              "kasa": 176,
+              "podatek": 19,
+              "data": "2026-04-13",
+              "glowny": "Ja",
+              "numer_meczu": 4688734,
+              "delegacja": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-04-13T09:39:28.656Z",
+              "zolteKartkiGosc": 2,
+              "zolteKartkiGospodarz": 2,
+              "wynikGosc": 1,
+              "wynikGospodarz": 0,
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "WTIhFnot6g7PiZEIIlZc": {
+            "data": {
+              "id_mecz": "8d07a5e6-48f6-4c1d-8724-bcf99fbbe9c6",
+              "gospodarz": "LZS Nowa",
+              "gosc": "Rybak Parowa",
+              "liga": "B jeden",
+              "kasa": "194",
+              "podatek": "21",
+              "data": "2026-04-26",
+              "glowny": "Ja",
+              "numer_meczu": 4688744,
+              "delegacja": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-02T17:45:05.971Z",
+              "zolteKartkiGosc": 2,
+              "zolteKartkiGospodarz": 1,
+              "wynikGosc": 1,
+              "wynikGospodarz": 2,
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "WwLYlBdN5a6SltHuvd6E": {
+            "data": {
+              "id_mecz": "249d3244-1a89-4e0c-973c-c88cc99e959b",
+              "gospodarz": "Nysa Zgorzelec",
+              "gosc": "Orzeł Mysłakowice",
+              "liga": "Okręgówka SG",
+              "kasa": 262,
+              "podatek": 28,
+              "data": "2026-04-11",
+              "glowny": "Ja",
+              "numer_meczu": 4686548,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "zolteKartkiGospodarz": 0,
+              "createdAt": "2026-04-11T10:45:05.095Z",
+              "zolteKartkiGosc": 5,
+              "czerwoneKartkiGosc": 2,
+              "czerwoneKartkiGospodarz": 1,
+              "wynikGosc": 1,
+              "wynikGospodarz": 2
+            },
+            "subcollections": {}
+          },
+          "XR6xHItyhsegFhWBGWOK": {
+            "data": {
+              "id_mecz": "d5801dfe-1c09-42e9-9ad2-fdc5177d6ba0",
+              "gospodarz": "Piast Nowa Ruda",
+              "gosc": "Piast Żmigród",
+              "liga": "IV Liga SA",
+              "kasa": 240,
+              "podatek": 25,
+              "data": "2026-05-09",
+              "glowny": "Krystian Ołota",
+              "numer_meczu": 4664897,
+              "delegacja": 0,
+              "zaplacone": "",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-07T19:29:46.621Z"
+            },
+            "subcollections": {}
+          },
+          "Y8dlikZoF5JVbTp9QhVT": {
+            "data": {
+              "id_mecz": "8d2f5f59-08bf-4cde-ada0-3469891ad1c0",
+              "gospodarz": "Łużyce Lubań",
+              "gosc": "Górnik Złotoryja ",
+              "liga": "IV Liga SA",
+              "kasa": 240,
+              "podatek": 25,
+              "data": "2026-06-01",
+              "glowny": "Konrad Małachowski",
+              "numer_meczu": 4664926,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-02T08:59:23.092Z"
+            },
+            "subcollections": {}
+          },
+          "YhQhuhGJVA1XNme43Sle": {
+            "data": {
+              "id_mecz": "608a3a9e-f009-404c-a274-9a98ace96189",
+              "gospodarz": "KS Włodzice",
+              "gosc": "Legend Squad Radogoszcz",
+              "liga": "B SG",
+              "kasa": 176,
+              "podatek": 19,
+              "data": "2026-04-12",
+              "glowny": "Ja",
+              "numer_meczu": 4688642,
+              "delegacja": 0,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-04-13T09:38:02.208Z",
+              "wynikGosc": 4,
+              "wynikGospodarz": 2,
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "YvicBV8IJMKiMWvjoN1Z": {
+            "data": {
+              "id_mecz": "713205fc-2c66-47e0-af87-e29ea01d68f7",
+              "gospodarz": "BKS Bolesławiec",
+              "gosc": "MAKO Lubań",
+              "liga": "Młodzik",
+              "kasa": 95,
+              "podatek": 10,
+              "data": "2026-06-12",
+              "glowny": "Ja",
+              "numer_meczu": 4761218,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "runda": "wiosenna",
+              "sezon": "2025/2026",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-12T18:51:18.150Z"
+            },
+            "subcollections": {}
+          },
+          "Zq9lcQXcu6wy6zMnOLD3": {
+            "data": {
+              "id_mecz": "83f750ee-27af-4ff5-bdc6-83e2e38951fa",
+              "gospodarz": "GKS Iwiny",
+              "gosc": "LKS Kraśnik Dolny",
+              "liga": "B SG",
+              "kasa": 176,
+              "podatek": 19,
+              "data": "2026-03-22",
+              "glowny": "Ja",
+              "numer_meczu": 4688717,
+              "delegacja": 0,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-03-18T18:14:55.747Z",
+              "wynikGosc": 0,
+              "wynikGospodarz": 7,
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "avxzY7gw7PoVsszEh2lG": {
+            "data": {
+              "id_mecz": "404c740c-1488-4b89-9833-81e4522128fc",
+              "gospodarz": "GKS Tomaszów",
+              "gosc": "Stare Jaroszowice",
+              "liga": "A SG",
+              "kasa": 199,
+              "podatek": 21,
+              "data": "2026-05-17",
+              "glowny": "Ja",
+              "numer_meczu": 4687847,
+              "delegacja": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-23T09:04:06.986Z",
+              "zaplacone": "T",
+              "zolteKartkiGospodarz": 2,
+              "wynikGosc": 3,
+              "wynikGospodarz": 0
+            },
+            "subcollections": {}
+          },
+          "cqeyBeBcvFzSYMG5ZstF": {
+            "data": {
+              "id_mecz": "147cea7c-6723-4805-989a-e8ffdf89693f",
+              "gospodarz": "BKS Bolesławiec",
+              "gosc": "KKS Jelenia Góra",
+              "liga": "Wojewódzka młodzik/trampkarz SG",
+              "kasa": 122,
+              "podatek": 13,
+              "data": "2026-04-01",
+              "glowny": "Ja",
+              "numer_meczu": 4756650,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-04-01T13:29:11.030Z"
+            },
+            "subcollections": {}
+          },
+          "excfdkoGBGzMOU55nLQL": {
+            "data": {
+              "id_mecz": "04598160-c3d2-42a2-a200-122f41b9133b",
+              "gospodarz": "Apis Jędrzychowice",
+              "gosc": "Chrobry Nowogrodziec",
+              "liga": "Okręgówka SG",
+              "kasa": 262,
+              "podatek": 28,
+              "data": "2026-03-29",
+              "glowny": "Ja",
+              "numer_meczu": 4686532,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-03-28T10:04:01.135Z",
+              "zolteKartkiGosc": 3,
+              "zolteKartkiGospodarz": 2,
+              "wynikGosc": 2,
+              "wynikGospodarz": 1
+            },
+            "subcollections": {}
+          },
+          "fxTEr6HhLEgEwvB78P7p": {
+            "data": {
+              "id_mecz": "b60820ce-f760-4898-bc34-37bf7f16e94d",
+              "gospodarz": "Błyskawica Gać ",
+              "gosc": "Chrobry Głogów",
+              "liga": "IV Liga SA",
+              "kasa": 240,
+              "podatek": 25,
+              "data": "2026-03-21",
+              "glowny": "Bartek Gajewnik",
+              "numer_meczu": 4664811,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-03-18T18:10:17.267Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "gckE0Y1PTYRmkKA7lhKz": {
+            "data": {
+              "id_mecz": "205fdffc-c1cb-47e6-b1b1-f0fe506392f7",
+              "gospodarz": "Znicz Kruszyn",
+              "gosc": "LZS Brzeźnik",
+              "liga": "B SA",
+              "kasa": 131,
+              "podatek": 14,
+              "data": "2026-05-31",
+              "glowny": "Sławomir Dmuchowski",
+              "numer_meczu": 4688785,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-02T08:58:35.188Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "gqddd4PwgD3SwcnJt4xi": {
+            "data": {
+              "id_mecz": "4b36b0ab-764e-49d2-8324-bf33ab622808",
+              "gospodarz": "Apis Jędrzychowice",
+              "gosc": "GKS Raciborowice",
+              "liga": "Okręgówka SA",
+              "kasa": 212,
+              "podatek": 23,
+              "data": "2026-04-08",
+              "glowny": "Ja",
+              "numer_meczu": 4499505,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-02T17:38:54.310Z"
+            },
+            "subcollections": {}
+          },
+          "ix7YLnnpiUgw8r8oD8M1": {
+            "data": {
+              "id_mecz": "54f320d9-de57-4189-94cb-7090007fc164",
+              "gospodarz": "GKS Otok",
+              "gosc": "Dąbrowa Bolesławiecka",
+              "liga": "B SA",
+              "kasa": 131,
+              "podatek": 14,
+              "data": "2026-05-17",
+              "glowny": "Filip Grzesiak",
+              "numer_meczu": 4688768,
+              "delegacja": 0,
+              "zaplacone": "",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-23T09:05:50.965Z"
+            },
+            "subcollections": {}
+          },
+          "j8OgXQ0fsgP5TPw5eltQ": {
+            "data": {
+              "id_mecz": "3fdc1dfa-a057-46ec-915d-c05f3303223f",
+              "gospodarz": "Olimpia Kamienna Góra",
+              "gosc": "Hutnik Pieńsk",
+              "liga": "Okręgówka SG",
+              "kasa": 262,
+              "podatek": 28,
+              "data": "2026-03-14",
+              "glowny": "Ja",
+              "numer_meczu": 4686519,
+              "delegacja": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-03-14T08:04:28.368Z",
+              "zolteKartkiGosc": 3,
+              "zolteKartkiGospodarz": 2,
+              "wynikGosc": 1,
+              "wynikGospodarz": 2,
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "kVfs4xrdVtylgTgdsBhP": {
+            "data": {
+              "id_mecz": "f4797abe-8cb8-4ea3-b7aa-f59ab25e1b41",
+              "gospodarz": "Górnik Złotoryja ",
+              "gosc": "Piast Nowa Ruda",
+              "liga": "IV Liga SA",
+              "kasa": 240,
+              "podatek": 25,
+              "data": "2026-04-15",
+              "glowny": "Konrad Małachowski",
+              "numer_meczu": 4664851,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-04-15T09:01:30.130Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "m5iS9wYBqbVSwhCSnaz1": {
+            "data": {
+              "id_mecz": "66453695-871a-498e-ae89-56882fbd00ce",
+              "gospodarz": "Bielany Biedrzychowice",
+              "gosc": "Legend Squad Radogoszcz",
+              "liga": "B SA",
+              "kasa": 131,
+              "podatek": 14,
+              "data": "2026-06-14",
+              "glowny": "Krystian Pałasiuk ",
+              "numer_meczu": 4688707,
+              "delegacja": 0,
+              "runda": "wiosenna",
+              "sezon": "2025/2026",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-18T08:14:01.604Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "mL7PD90O9lFr3WI2M5cT": {
+            "data": {
+              "id_mecz": "8683767c-d4f1-457a-8edc-3fe225c228a2",
+              "gospodarz": "LZS Brzeźnik",
+              "gosc": "LKS Kraśnik Dolny",
+              "liga": "B SG",
+              "kasa": 176,
+              "podatek": 19,
+              "data": "2026-05-06",
+              "glowny": "Ja",
+              "numer_meczu": 4688756,
+              "delegacja": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-08T08:40:29.528Z",
+              "zaplacone": "T",
+              "zolteKartkiGosc": 1,
+              "zolteKartkiGospodarz": 1,
+              "wynikGosc": 0,
+              "wynikGospodarz": 5
+            },
+            "subcollections": {}
+          },
+          "mZ3RP2OQ2dNUW0FFQwwt": {
+            "data": {
+              "id_mecz": "187d1343-14e2-4302-aec9-4f742545f47a",
+              "gospodarz": "Legend Squad Radogoszcz",
+              "gosc": "KS Kotliska",
+              "liga": "B SG",
+              "kasa": 176,
+              "podatek": 19,
+              "data": "2026-05-02",
+              "glowny": "Ja",
+              "numer_meczu": 4688665,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-02T17:48:25.828Z",
+              "zolteKartkiGospodarz": 3,
+              "wynikGosc": 3,
+              "wynikGospodarz": 6
+            },
+            "subcollections": {}
+          },
+          "maJ082SRftQL74OiZwcJ": {
+            "data": {
+              "id_mecz": "50b7e9bd-fbc3-4d65-ae16-f5382fdfb32e",
+              "gospodarz": "Miedź Legnica",
+              "gosc": "Piast Gliwice",
+              "liga": "CLJ U-15",
+              "kasa": "200",
+              "podatek": "21",
+              "data": "2026-04-09",
+              "glowny": "Krystian Ołota",
+              "numer_meczu": 4666279,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-04-04T10:37:35.322Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "pkY2PH9AK9UhkqhgZ7Ut": {
+            "data": {
+              "id_mecz": "4140a219-ec39-4238-8097-d6d3a933dee1",
+              "gospodarz": "Victoria Ruszów",
+              "gosc": "LKS Ocice",
+              "liga": "A SG",
+              "kasa": 199,
+              "podatek": 21,
+              "data": "2026-04-26",
+              "glowny": "Maciej Michałeczko",
+              "numer_meczu": 4687823,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-02T17:46:10.189Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "pvZa5NMfX1UquSdMvpyk": {
+            "data": {
+              "id_mecz": "a9f7522e-4dcb-415f-8185-c0a63c775fbf",
+              "gospodarz": "Leśnik Osiecznica",
+              "gosc": "Twardy Świętoszów",
+              "liga": "Trampkarz",
+              "kasa": 113,
+              "podatek": 12,
+              "data": "2026-05-16",
+              "glowny": "Ja",
+              "numer_meczu": 4768002,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-23T09:06:38.179Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "qgmooSoj819HLQb8PGxB": {
+            "data": {
+              "id_mecz": "448cc190-f266-4999-80c2-a27cb1db44ef",
+              "gospodarz": "Orzeł Gościszów",
+              "gosc": "Sparta Zebrzydowa",
+              "liga": "Młodzik",
+              "kasa": 95,
+              "podatek": 10,
+              "data": "2026-04-29",
+              "glowny": "Ja",
+              "numer_meczu": 4761657,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-04-29T13:37:39.905Z"
+            },
+            "subcollections": {}
+          },
+          "sdtGHrg6y5IFiQ8OGeWg": {
+            "data": {
+              "id_mecz": "800de786-2769-4f10-a002-464ad78ccea2",
+              "gospodarz": "Orzeł Wojcieszów ",
+              "gosc": "Skalnik Czarny Bor ",
+              "liga": "A SG",
+              "kasa": 199,
+              "podatek": 21,
+              "data": "2026-05-31",
+              "glowny": "Ja",
+              "numer_meczu": 4687521,
+              "delegacja": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-02T08:57:30.323Z",
+              "zaplacone": "T",
+              "zolteKartkiGosc": 3,
+              "zolteKartkiGospodarz": 1,
+              "wynikGosc": 1,
+              "wynikGospodarz": 5
+            },
+            "subcollections": {}
+          },
+          "sqQNON494xcAPVqVhYUE": {
+            "data": {
+              "id_mecz": "80f0ae29-e77f-4366-86b3-7eb1ef1b5259",
+              "gospodarz": "LZS Skalnik Rębiszów ",
+              "gosc": "LZS Niwnice",
+              "liga": "B SA",
+              "kasa": 131,
+              "podatek": 14,
+              "data": "2026-05-10",
+              "glowny": "Filip Grzesiak",
+              "numer_meczu": 4688667,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-05-10T05:47:51.339Z"
+            },
+            "subcollections": {}
+          },
+          "zAvVug9K2i0VsS0X1SPn": {
+            "data": {
+              "id_mecz": "ea23be1d-05ef-414f-b5f7-2d7700259077",
+              "gospodarz": "Stare Jaroszowice",
+              "gosc": "BKS Bolesławiec",
+              "liga": "A SA",
+              "kasa": 154,
+              "podatek": 16,
+              "data": "2026-03-15",
+              "glowny": "Igor Jaśkiewicz",
+              "numer_meczu": 4687788,
+              "delegacja": 0,
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-03-18T18:08:47.369Z",
+              "zaplacone": "T"
+            },
+            "subcollections": {}
+          },
+          "zDrDZNf0TqwkKXI49YKb": {
+            "data": {
+              "id_mecz": "49a24990-3ca0-4105-ac08-6c9ef023bc01",
+              "gospodarz": "BKS Bolesławiec",
+              "gosc": "Jaworzanka Jawor",
+              "liga": "Wojewódzka młodzik/trampkarz SG",
+              "kasa": 122,
+              "podatek": 13,
+              "data": "2026-05-09",
+              "glowny": "Ja",
+              "numer_meczu": 4756666,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-06-07T19:28:38.496Z"
+            },
+            "subcollections": {}
+          },
+          "zgM1XJsoYdQjKEjJf302": {
+            "data": {
+              "id_mecz": "8d32e886-1835-48de-bd81-6ed924bd0a40",
+              "gospodarz": "Orzeł Gościszów",
+              "gosc": "LZS Niwnice",
+              "liga": "B SA",
+              "kasa": 131,
+              "podatek": 14,
+              "data": "2026-03-22",
+              "glowny": "Marcin Kozioł",
+              "numer_meczu": 4688628,
+              "delegacja": 1,
+              "zaplacone": "T",
+              "wynikGospodarz": null,
+              "wynikGosc": null,
+              "zolteKartkiGospodarz": 0,
+              "zolteKartkiGosc": 0,
+              "czerwoneKartkiGospodarz": 0,
+              "czerwoneKartkiGosc": 0,
+              "createdAt": "2026-03-22T08:10:08.247Z"
+            },
+            "subcollections": {}
+          }
+        }
+      }
+    }
+  },
+  "watch_pins": {
+    "2282": {
+      "data": {
+        "away": "LECH",
+        "home": "GORNIK",
+        "createdAt": {
+          "_seconds": 1784897485,
+          "_nanoseconds": 581000000
+        }
+      },
+      "subcollections": {}
+    },
+    "3326": {
+      "data": {
+        "away": "LECH",
+        "home": "GORNIK",
+        "createdAt": {
+          "_seconds": 1784897233,
+          "_nanoseconds": 374000000
+        }
+      },
+      "subcollections": {}
+    },
+    "4927": {
+      "data": {
+        "home": "GORNIK",
+        "away": "LECH",
+        "createdAt": {
+          "_seconds": 1785437339,
+          "_nanoseconds": 631000000
+        }
+      },
+      "subcollections": {}
+    },
+    "5758": {
+      "data": {
+        "createdAt": {
+          "_seconds": 1784897491,
+          "_nanoseconds": 352000000
+        },
+        "home": "PIES",
+        "away": "SMIEC"
+      },
+      "subcollections": {}
+    },
+    "6087": {
+      "data": {
+        "home": "GORNIK",
+        "away": "LECH",
+        "time": "45",
+        "createdAt": {
+          "_seconds": 1785437862,
+          "_nanoseconds": 644000000
+        }
+      },
+      "subcollections": {}
+    },
+    "7171": {
+      "data": {
+        "createdAt": {
+          "_seconds": 1784897096,
+          "_nanoseconds": 101000000
+        },
+        "home": "GORNIK",
+        "away": "LECH"
+      },
+      "subcollections": {}
+    },
+    "8482": {
+      "data": {
+        "createdAt": {
+          "_seconds": 1784896967,
+          "_nanoseconds": 650000000
+        },
+        "away": "LECH",
+        "home": "GORNIK"
+      },
+      "subcollections": {}
+    }
+  }
+}

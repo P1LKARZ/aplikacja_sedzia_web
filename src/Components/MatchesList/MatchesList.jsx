@@ -19,7 +19,10 @@ export default function MatchesList() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [showFilters, setShowFilters] = useState(false);
 
-  // FILTERS STATE
+  // Bieżąca runda i sezon do domyślnego filtrowania
+  const { runda: aktualnaRunda, sezon: aktualnySezon } = getRundaSezon(new Date());
+
+  // FILTERS STATE – domyślnie bieżąca runda i sezon
   const [filters, setFilters] = useState({
     team: "",
     gospodarz: "",
@@ -31,8 +34,8 @@ export default function MatchesList() {
     nrMeczu: "",
     zaplacone: "all",
     delegacja: "all",
-    runda: "all",
-    sezon: "all",
+    rundy: [aktualnaRunda],   // tablica – można wybrać kilka rund
+    sezon: aktualnySezon,
   });
 
   // SORT STATE
@@ -139,11 +142,11 @@ export default function MatchesList() {
       filtered = filtered.filter((m) => m.delegacja === isDelegacja);
     }
 
-    // Filtr rundy – obsługuje mecze starsze (bez pola runda) via getRundaSezon
-    if (currentFilters.runda !== "all") {
+    // Filtr rundy – tablica wybranych rund; pusta = wszystkie
+    if (currentFilters.rundy && currentFilters.rundy.length > 0) {
       filtered = filtered.filter((m) => {
         const r = m.runda || getRundaSezon(m.data).runda;
-        return r === currentFilters.runda;
+        return currentFilters.rundy.includes(r);
       });
     }
 
@@ -193,6 +196,16 @@ export default function MatchesList() {
     applyFiltersAndSort(mecze, newFilters, sortBy);
   };
 
+  const handleRundaChange = (runda) => {
+    const current = filters.rundy;
+    const newRundy = current.includes(runda)
+      ? current.filter((r) => r !== runda)
+      : [...current, runda];
+    const newFilters = { ...filters, rundy: newRundy };
+    setFilters(newFilters);
+    applyFiltersAndSort(mecze, newFilters, sortBy);
+  };
+
   const handleSortChange = (e) => {
     const newSort = e.target.value;
     setSortBy(newSort);
@@ -211,8 +224,8 @@ export default function MatchesList() {
       nrMeczu: "",
       zaplacone: "all",
       delegacja: "all",
-      runda: "all",
-      sezon: "all",
+      rundy: [aktualnaRunda],
+      sezon: aktualnySezon,
     };
     setFilters(emptyFilters);
     setSortBy("data-desc");
@@ -345,6 +358,22 @@ const handleGeneratePDF = (mecz) => {
 
  const totalKasa = filteredMecze.reduce((sum, m) => sum + (parseFloat(m.kasa) || 0), 0);
   const totalPodatek = filteredMecze.reduce((sum, m) => sum + (parseFloat(m.podatek) || 0), 0);
+  const totalMecze = filteredMecze.length;
+  const totalZaplacone = filteredMecze.filter((m) => m.zaplacone === "T").length;
+  const totalNiezaplacone = totalMecze - totalZaplacone;
+  const totalZolte = filteredMecze.reduce(
+    (sum, m) => sum + (parseInt(m.zolteKartkiGospodarz) || 0) + (parseInt(m.zolteKartkiGosc) || 0), 0
+  );
+  const totalCzerwone = filteredMecze.reduce(
+    (sum, m) => sum + (parseInt(m.czerwoneKartkiGospodarz) || 0) + (parseInt(m.czerwoneKartkiGosc) || 0), 0
+  );
+const totalJakoGlowny = filteredMecze.filter(
+  (m) => m.wynikGospodarz !== null && m.wynikGospodarz !== undefined &&
+         m.wynikGosc !== null && m.wynikGosc !== undefined
+).length;
+
+const avgZolte = totalJakoGlowny > 0 ? (totalZolte / totalJakoGlowny).toFixed(2) : "—";
+const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFixed(2) : "—";
 
   if (loading) {
     return (
@@ -360,14 +389,43 @@ const handleGeneratePDF = (mecz) => {
       
     <div className="list-summary">
           <div className="summary-item">
-            <span className="summary-label">💰 Suma kasy:</span>
+            <span className="summary-label">⚽ Mecze</span>
+            <span className="summary-value">{totalMecze}</span>
+          </div>
+          <div className="summary-item">
+            <span className="summary-label">💰 Suma kasy</span>
             <span className="summary-value">{totalKasa.toFixed(2)} zł</span>
           </div>
           <div className="summary-item">
-            <span className="summary-label">🧾 Suma podatku:</span>
+            <span className="summary-label">🧾 Podatek</span>
             <span className="summary-value summary-value--tax">{totalPodatek.toFixed(2)} zł</span>
           </div>
          
+    
+          <div className="summary-item">
+            <span className="summary-label">⏳ Nieopłacone</span>
+            <span className="summary-value summary-value--tax">{totalNiezaplacone}</span>
+          </div>
+          <div className="summary-item">
+            <span className="summary-label">🟨 Żółte kartki</span>
+            <span className="summary-value summary-value--yellow">{totalZolte}</span>
+          </div>
+          <div className="summary-item">
+            <span className="summary-label">🟥 Czerwone kartki</span>
+            <span className="summary-value summary-value--red">{totalCzerwone}</span>
+          </div>
+          <div className="summary-item">
+  <span className="summary-label">⚽ Sędzia główny</span>
+  <span className="summary-value">{totalJakoGlowny}</span>
+</div>
+<div className="summary-item">
+  <span className="summary-label">🟨 Śr. żółte</span>
+  <span className="summary-value summary-value--yellow">{avgZolte}</span>
+</div>
+<div className="summary-item">
+  <span className="summary-label">🟥 Śr. czerwone</span>
+  <span className="summary-value summary-value--red">{avgCzerwone}</span>
+</div>
         </div>
       {mecze.length === 0 ? (
         <div className="empty-state">
@@ -528,18 +586,33 @@ const handleGeneratePDF = (mecz) => {
                   </div>
 
                   <div className="filter-group">
-                    <label htmlFor="runda">Runda:</label>
-                    <select
-                      id="runda"
-                      name="runda"
-                      value={filters.runda}
-                      onChange={handleFilterChange}
-                      className="filter-select"
-                    >
-                      <option value="all">Wszystkie</option>
-                      <option value="jesienna">Jesienna</option>
-                      <option value="wiosenna">Wiosenna</option>
-                    </select>
+                    <label>Runda:</label>
+                    <div className="filter-checkboxes">
+                      {["jesienna", "wiosenna"].map((r) => (
+                        <label key={r} className="filter-checkbox-label">
+                          <input
+                            type="checkbox"
+                            checked={filters.rundy.includes(r)}
+                            onChange={() => handleRundaChange(r)}
+                            className="filter-checkbox"
+                          />
+                          {r.charAt(0).toUpperCase() + r.slice(1)}
+                        </label>
+                      ))}
+                      <label className="filter-checkbox-label filter-checkbox-all">
+                        <input
+                          type="checkbox"
+                          checked={filters.rundy.length === 0}
+                          onChange={() => {
+                            const newFilters = { ...filters, rundy: [] };
+                            setFilters(newFilters);
+                            applyFiltersAndSort(mecze, newFilters, sortBy);
+                          }}
+                          className="filter-checkbox"
+                        />
+                        Wszystkie
+                      </label>
+                    </div>
                   </div>
 
                   <div className="filter-group">

@@ -1080,3 +1080,57 @@
   transform: translateY(-2px);
 }
 
+
+/* --- Checkboxy dla filtra rundy --- */
+.filter-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.filter-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--color-border, #ccc);
+  background: var(--color-surface, #fff);
+  transition: background 0.15s, border-color 0.15s;
+  user-select: none;
+}
+
+.filter-checkbox-label:has(.filter-checkbox:checked) {
+  background: rgba(var(--color-primary-rgb), 0.15);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.filter-checkbox {
+  accent-color: var(--color-primary);
+  width: 14px;
+  height: 14px;
+}
+
+.filter-checkbox-all {
+  opacity: 0.75;
+}
+
+.filter-checkbox-all:has(.filter-checkbox:checked) {
+  background: rgba(128, 128, 128, 0.12);
+  border-color: #888;
+  color: inherit;
+  font-weight: normal;
+}
+
+.summary-value--yellow {
+  color: #c9a800;
+}
+
+.summary-value--red {
+  color: var(--color-danger);
+}

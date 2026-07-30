@@ -115,6 +115,9 @@ export default function Home() {
                 <button onClick={() => navigate("/matches")} className="btn-nav-matches">
                   Moje Mecze
                 </button>
+                <button onClick={() => navigate("/garmin")} className="btn-nav-matches">
+                  PIN
+                </button>
                 <button onClick={handleLogout} className="btn-modern-logout position-relative overflow-hidden">
                   <span className="btn-text">Wyloguj</span>
                   <div className="btn-glow-effect"></div>
