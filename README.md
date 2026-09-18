@@ -1,0 +1,1 @@
+dodac mecz do tzw akceptacji dodanie jesli mecz jest dodany do strony /mecz to wtedy na stronie formularza do dodawania pojawia sie informacja ze zostal dodany nie zatwierdzony mecz i wtedy uzupelnic dane meczu -dodac sklady do zegarka i zrobic jakos zeby po zrobieniu zdjecia samo generowalo liste z numerami

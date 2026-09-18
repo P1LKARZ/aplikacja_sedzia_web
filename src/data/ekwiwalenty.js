@@ -1,0 +1,33 @@
+const ekwiwalenty = {
+    "4sg": { ligaSkrocona: "IV liga", liga: "IV liga ", ekwiwalentBrutto: "365", koszty: "73", podstawa: "292", podatek: "35", ekwiwalentNetto: "330", odbiorkwoty: "330", slownie: "trzysta trzydzieści" },
+    "4sa": { ligaSkrocona: "IV Liga SA", liga: "IV liga ", ekwiwalentBrutto: "265", koszty: "53", podstawa: "212", podatek: "25", ekwiwalentNetto: "240", odbiorkwoty: "240", slownie: "dwieście czterdzieści" },
+    "o_sg": { ligaSkrocona: "Okręgówka SG", liga: "okręgowa", ekwiwalentBrutto: "290", koszty: "58", podstawa: "232", podatek: "28", ekwiwalentNetto: "262", odbiorkwoty: "262", slownie: "dwieście sześćdziesiąt dwa" },
+    "o_sa": { ligaSkrocona: "Okręgówka SA", liga: "okręgowa ", ekwiwalentBrutto: "235", koszty: "47", podstawa: "188", podatek: "23", ekwiwalentNetto: "212", odbiorkwoty: "212", slownie: "dwieście dwanaście" },
+    "a_sg": { ligaSkrocona: "A SG", liga: "A " , ekwiwalentBrutto: "220", koszty: "44", podstawa: "176", podatek: "21", ekwiwalentNetto: "199", odbiorkwoty: "199", slownie: "sto dziewięćdziesiąt dziewięć" },
+    "a_sa": { ligaSkrocona: "A SA", liga: "A ", ekwiwalentBrutto: "170", koszty: "34", podstawa: "136", podatek: "16", ekwiwalentNetto: "154", odbiorkwoty: "154", slownie: "sto pięćdziesiąt cztery" },
+    "b_sg": { ligaSkrocona: "B SG", liga: "B ", ekwiwalentBrutto: "195", koszty: "39", podstawa: "156", podatek: "19", ekwiwalentNetto: "176", odbiorkwoty: "176", slownie: "sto siedemdziesiąt sześć" },
+    "b_sa": { ligaSkrocona: "B SA", liga: "B ", ekwiwalentBrutto: "145", koszty: "29", podstawa: "116", podatek: "14", ekwiwalentNetto: "131", odbiorkwoty: "131", slownie: "sto trzydzieści jeden" },
+    "b1": { ligaSkrocona: "B (jeden sędzia)", liga: "B ", ekwiwalentBrutto: "215", koszty: "43", podstawa: "172", podatek: "21", ekwiwalentNetto: "194", odbiorkwoty: "194", slownie: "sto dziewięćdziesiąt cztery" },
+    "ldj_sg": { ligaSkrocona: "LDJ starszych Sedzia Główny", liga: "LDJ starszych", ekwiwalentBrutto: "185", koszty: "37", podstawa: "148", podatek: "18", ekwiwalentNetto: "167", odbiorkwoty: "167", slownie: "sto sześćdziesiąt siedem" },
+    "ldjm_sg": { ligaSkrocona: "LDJ Młodszych SG", liga: "LDJ młodszych", ekwiwalentBrutto: "195", koszty: "39", podstawa: "156", podatek: "19", ekwiwalentNetto: "176", odbiorkwoty: "176", slownie: "sto siedemdziesiąt sześć" },
+    "ldjm_sa": { ligaSkrocona: "LDJ młodszych SA", liga: "LDJ młodszych ", ekwiwalentBrutto: "155", koszty: "31", podstawa: "124", podatek: "15", ekwiwalentNetto: "140", odbiorkwoty: "140", slownie: "sto czterdzieści" },
+    "junior_sg": { ligaSkrocona: "O Juniorów SG", liga: "O juniorów", ekwiwalentBrutto: "150", koszty: "30", podstawa: "120", podatek: "14", ekwiwalentNetto: "132", odbiorkwoty: "132", slownie: "sto trzydzieści dwa" },
+    "junior_sa": { ligaSkrocona: "O juniorów SA", liga: "O juniorów ", ekwiwalentBrutto: "115", koszty: "23", podstawa: "92", podatek: "11", ekwiwalentNetto: "104", odbiorkwoty: "104", slownie: "sto cztery" },
+    "junior1": { ligaSkrocona: "O juniorów (jeden sędzia)", liga: "O juniorów ", ekwiwalentBrutto: "170", koszty: "34", podstawa: "136", podatek: "16", ekwiwalentNetto: "154", odbiorkwoty: "154", slownie: "sto pięćdziesiąt cztery" },
+    "oml_sg": { ligaSkrocona: "O juniorów młodszych SG", liga: "O juniorów młodszych", ekwiwalentBrutto: "135", koszty: "27", podstawa: "108", podatek: "13", ekwiwalentNetto: "122", odbiorkwoty: "122", slownie: "sto dwadzieścia dwa" },
+    "oml_sa": { ligaSkrocona: "O juniorów młodszych SA", liga: "O juniorów młodszych ", ekwiwalentBrutto: "105", koszty: "21", podstawa: "84", podatek: "10", ekwiwalentNetto: "95", odbiorkwoty: "95", slownie: "dziewięćdziesiąt pięć" },
+    "oml1": { ligaSkrocona: "O juniorów młodszych (jeden sędzia)", liga: "O juniorów młodszych ", ekwiwalentBrutto: "150", koszty: "30", podstawa: "120", podatek: "14", ekwiwalentNetto: "136", odbiorkwoty: "136", slownie: "sto trzydzieści sześć" },
+    "woj_sg": { ligaSkrocona: "Wojewódzka młodzik/trampkarz SG", liga: "Wojewódzka trampkarz/młodzik", ekwiwalentBrutto: "135", koszty: "27", podstawa: "108", podatek: "13", ekwiwalentNetto: "122", odbiorkwoty: "122", slownie: "sto dwadzieścia dwa" },
+    "woj_sa": { ligaSkrocona: "Wojewódzka młodzik/trampkarz SA", liga: "Wojewódzka trampkarz/młodzik ", ekwiwalentBrutto: "110", koszty: "22", podstawa: "88", podatek: "11", ekwiwalentNetto: "99", odbiorkwoty: "99", slownie: "dziewięćdziesiąt dziewięć" },
+    "woj1": { ligaSkrocona: "Wojewódzka trampkarz/młodzik (jeden lub dwóch sędziów)", liga: "Wojewódzka trampkarz/młodzik ", ekwiwalentBrutto: "135", koszty: "27", podstawa: "108", podatek: "13", ekwiwalentNetto: "122", odbiorkwoty: "122", slownie: "sto dwadzieścia dwa" },
+    "woj2": { ligaSkrocona: "Wojewódzka trampkarz/młodzik (dwóch sędziów)", liga: "Wojewódzka trampkarz/młodzik ", ekwiwalentBrutto: "125", koszty: "25", podstawa: "100", podatek: "12", ekwiwalentNetto: "113", odbiorkwoty: "113", slownie: "sto trzynaście" },
+    "tramp1": { ligaSkrocona: "Trampkarz", liga: "Trampkarz (jeden sędzia)", ekwiwalentBrutto: "125", koszty: "25", podstawa: "100", podatek: "12", ekwiwalentNetto: "113", odbiorkwoty: "113", slownie: "sto trzynaście" },
+    "mlodzik": { ligaSkrocona: "Młodzik", liga: "Młodzik", ekwiwalentBrutto: "105", koszty: "21", podstawa: "84", podatek: "10", ekwiwalentNetto: "95", odbiorkwoty: "95", slownie: "dziewięćdziesiąt pięć" },
+    "zero": { ligaSkrocona: "", liga: "", ekwiwalentBrutto: "", koszty: "", podstawa: "", podatek: "", ekwiwalentNetto: "", odbiorkwoty: "", slownie: " " },
+    "Rozgrywki Pucharu Deyny": { ligaSkrocona: "Rozgrywki Pucharu Deyny", liga: "Rozgrywki Pucharu Deyny", ekwiwalentBrutto: "90", koszty: "18", podstawa: "72", podatek: "9", ekwiwalentNetto: "81", odbiorkwoty: "81", slownie: "osiemdziesiąt jeden " },
+     "RozgMłodzywki  ": { ligaSkrocona: "Rozgrywki Pucharu Deyny", liga: "Rozgrywki Pucharu Deyny", ekwiwalentBrutto: "90", koszty: "18", podstawa: "72", podatek: "9", ekwiwalentNetto: "81", odbiorkwoty: "81", slownie: "osiemdziesiąt jeden " },
+    "III Liga Futsalu":{ ligaSkrocona: "III Liga Futsalu", liga: "III Liga Futsalu", ekwiwalentBrutto: "290", koszty: "58", podstawa: "232", podatek: "28", ekwiwalentNetto: "262", odbiorkwoty: "262", slownie: "dwieście sześćdziesiąt dwa" },
+    
+  };
+  
+  export default ekwiwalenty;
