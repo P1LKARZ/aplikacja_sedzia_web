@@ -1,10 +1,24 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { collection, getDocs, doc, updateDoc, deleteDoc } from "firebase/firestore";
+=======
+import { filterMatches } from "../../utils/filterMatches";
+import React, { useState, useEffect, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
+import {
+  collection,
+  getDocs,
+  doc,
+  updateDoc,
+  deleteDoc,
+} from "firebase/firestore";
+>>>>>>> 93909dd (panel admina)
 import { db } from "../../firebase";
 import { getAuth } from "firebase/auth";
 import "./MatchesList.css";
 import { generatePDF } from "../../utils/generatePdf";
+<<<<<<< HEAD
 import ekwiwalenty from "../../data/ekwiwalenty";
 import { getRundaSezon } from "../../utils/getRundaSezon";
 
@@ -24,6 +38,16 @@ export default function MatchesList() {
 
   // FILTERS STATE – domyślnie bieżąca runda i sezon
   const [filters, setFilters] = useState({
+=======
+import { mapMeczToPdfData } from "../../utils/mapMeczToPdfData";
+import { getRundaSezon } from "../../utils/getRundaSezon";
+
+function createDefaultFilters() {
+  const { runda: aktualnaRunda, sezon: aktualnySezon } = getRundaSezon(
+    new Date(),
+  );
+  return {
+>>>>>>> 93909dd (panel admina)
     team: "",
     gospodarz: "",
     gosc: "",
@@ -34,9 +58,27 @@ export default function MatchesList() {
     nrMeczu: "",
     zaplacone: "all",
     delegacja: "all",
+<<<<<<< HEAD
     rundy: [aktualnaRunda],   // tablica – można wybrać kilka rund
     sezon: aktualnySezon,
   });
+=======
+    rundy: [aktualnaRunda], // tablica – można wybrać kilka rund
+    sezon: aktualnySezon,
+  };
+}
+
+export default function MatchesList() {
+  const [mecze, setMecze] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [editingId, setEditingId] = useState(null);
+  const [expandedId, setExpandedId] = useState(null);
+  const [editData, setEditData] = useState({});
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [showFilters, setShowFilters] = useState(false);
+
+  const [filters, setFilters] = useState(createDefaultFilters);
+>>>>>>> 93909dd (panel admina)
 
   // SORT STATE
   const [sortBy, setSortBy] = useState("data-desc");
@@ -62,6 +104,7 @@ export default function MatchesList() {
       }
 
       try {
+<<<<<<< HEAD
         const querySnapshot = await getDocs(collection(db, "users", user.uid, "mecze"));
         const meczArray = [];
         querySnapshot.forEach((doc) => {
@@ -69,6 +112,14 @@ export default function MatchesList() {
         });
         setMecze(meczArray);
         applyFiltersAndSort(meczArray, filters, sortBy);
+=======
+        const querySnapshot = await getDocs(
+          collection(db, "users", user.uid, "mecze"),
+        );
+        setMecze(
+          querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })),
+        );
+>>>>>>> 93909dd (panel admina)
       } catch (error) {
         console.error("Błąd:", error);
       } finally {
@@ -79,6 +130,7 @@ export default function MatchesList() {
     fetchMecze();
   }, [user, navigate]);
 
+<<<<<<< HEAD
   // APPLY FILTERS AND SORT
   const applyFiltersAndSort = (data, currentFilters, currentSort) => {
     let filtered = [...data];
@@ -188,12 +240,21 @@ export default function MatchesList() {
 
     setFilteredMecze(filtered);
   };
+=======
+  const filteredMecze = useMemo(
+    () => filterMatches(mecze, filters, sortBy),
+    [mecze, filters, sortBy],
+  );
+>>>>>>> 93909dd (panel admina)
 
   const handleFilterChange = (e) => {
     const { name, value } = e.target;
     const newFilters = { ...filters, [name]: value };
     setFilters(newFilters);
+<<<<<<< HEAD
     applyFiltersAndSort(mecze, newFilters, sortBy);
+=======
+>>>>>>> 93909dd (panel admina)
   };
 
   const handleRundaChange = (runda) => {
@@ -203,6 +264,7 @@ export default function MatchesList() {
       : [...current, runda];
     const newFilters = { ...filters, rundy: newRundy };
     setFilters(newFilters);
+<<<<<<< HEAD
     applyFiltersAndSort(mecze, newFilters, sortBy);
   };
 
@@ -230,6 +292,17 @@ export default function MatchesList() {
     setFilters(emptyFilters);
     setSortBy("data-desc");
     applyFiltersAndSort(mecze, emptyFilters, "data-desc");
+=======
+  };
+
+  const handleSortChange = (e) => {
+    setSortBy(e.target.value);
+  };
+
+  const clearFilters = () => {
+    setFilters(createDefaultFilters());
+    setSortBy("data-desc");
+>>>>>>> 93909dd (panel admina)
   };
 
   const toggleExpanded = (meczId) => {
@@ -254,6 +327,7 @@ export default function MatchesList() {
     try {
       const meczRef = doc(db, "users", user.uid, "mecze", meczId);
       await updateDoc(meczRef, {
+<<<<<<< HEAD
         wynikGospodarz: editData.wynikGospodarz ? parseInt(editData.wynikGospodarz) : null,
         wynikGosc: editData.wynikGosc ? parseInt(editData.wynikGosc) : null,
         zolteKartkiGospodarz: parseInt(editData.zolteKartkiGospodarz) || 0,
@@ -269,6 +343,24 @@ export default function MatchesList() {
       );
       setMecze(updatedMecze);
       applyFiltersAndSort(updatedMecze, filters, sortBy);
+=======
+        wynikGospodarz: editData.wynikGospodarz
+          ? parseInt(editData.wynikGospodarz)
+          : null,
+        wynikGosc: editData.wynikGosc ? parseInt(editData.wynikGosc) : null,
+        zolteKartkiGospodarz: parseInt(editData.zolteKartkiGospodarz) || 0,
+        zolteKartkiGosc: parseInt(editData.zolteKartkiGosc) || 0,
+        czerwoneKartkiGospodarz:
+          parseInt(editData.czerwoneKartkiGospodarz) || 0,
+        czerwoneKartkiGosc: parseInt(editData.czerwoneKartkiGosc) || 0,
+      });
+
+      const updatedMecze = mecze.map((m) =>
+        m.id === meczId ? { ...m, ...editData } : m,
+      );
+      setMecze(updatedMecze);
+
+>>>>>>> 93909dd (panel admina)
       setEditingId(null);
       alert("✅ Mecz zaktualizowany!");
     } catch (error) {
@@ -286,11 +378,16 @@ export default function MatchesList() {
     try {
       const meczRef = doc(db, "users", user.uid, "mecze", meczId);
       const newStatus = currentStatus === "T" ? "N" : "T";
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> 93909dd (panel admina)
       await updateDoc(meczRef, {
         zaplacone: newStatus,
       });
 
+<<<<<<< HEAD
       const updatedMecze = mecze.map(m => 
         m.id === meczId 
           ? { ...m, zaplacone: newStatus }
@@ -299,6 +396,13 @@ export default function MatchesList() {
       setMecze(updatedMecze);
       applyFiltersAndSort(updatedMecze, filters, sortBy);
       
+=======
+      const updatedMecze = mecze.map((m) =>
+        m.id === meczId ? { ...m, zaplacone: newStatus } : m,
+      );
+      setMecze(updatedMecze);
+
+>>>>>>> 93909dd (panel admina)
       const statusText = newStatus === "T" ? "Zapłacone" : "Nieopłacone";
       alert(`✅ Status zmieniony na: ${statusText}`);
     } catch (error) {
@@ -311,9 +415,15 @@ export default function MatchesList() {
     if (window.confirm("⚠️ Na pewno chcesz usunąć ten mecz?")) {
       try {
         await deleteDoc(doc(db, "users", user.uid, "mecze", meczId));
+<<<<<<< HEAD
         const updatedMecze = mecze.filter(m => m.id !== meczId);
         setMecze(updatedMecze);
         applyFiltersAndSort(updatedMecze, filters, sortBy);
+=======
+        const updatedMecze = mecze.filter((m) => m.id !== meczId);
+        setMecze(updatedMecze);
+
+>>>>>>> 93909dd (panel admina)
         alert("✅ Mecz usunięty!");
       } catch (error) {
         console.error("Błąd:", error);
@@ -321,6 +431,7 @@ export default function MatchesList() {
       }
     }
   };
+<<<<<<< HEAD
   const getEkwiwalentByLiga = (liga) => {
   return Object.values(ekwiwalenty).find(
     (e) =>
@@ -374,6 +485,52 @@ const totalJakoGlowny = filteredMecze.filter(
 
 const avgZolte = totalJakoGlowny > 0 ? (totalZolte / totalJakoGlowny).toFixed(2) : "—";
 const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFixed(2) : "—";
+=======
+  const handleGeneratePDF = (mecz) => {
+    const pdfData = mapMeczToPdfData(mecz);
+    generatePDF(pdfData);
+  };
+
+  const totalKasa = filteredMecze.reduce(
+    (sum, m) => sum + (parseFloat(m.kasa) || 0),
+    0,
+  );
+  const totalPodatek = filteredMecze.reduce(
+    (sum, m) => sum + (parseFloat(m.podatek) || 0),
+    0,
+  );
+  const totalMecze = filteredMecze.length;
+  const totalZaplacone = filteredMecze.filter(
+    (m) => m.zaplacone === "T",
+  ).length;
+  const totalNiezaplacone = totalMecze - totalZaplacone;
+  const totalZolte = filteredMecze.reduce(
+    (sum, m) =>
+      sum +
+      (parseInt(m.zolteKartkiGospodarz) || 0) +
+      (parseInt(m.zolteKartkiGosc) || 0),
+    0,
+  );
+  const totalCzerwone = filteredMecze.reduce(
+    (sum, m) =>
+      sum +
+      (parseInt(m.czerwoneKartkiGospodarz) || 0) +
+      (parseInt(m.czerwoneKartkiGosc) || 0),
+    0,
+  );
+  const totalJakoGlowny = filteredMecze.filter(
+    (m) =>
+      m.wynikGospodarz !== null &&
+      m.wynikGospodarz !== undefined &&
+      m.wynikGosc !== null &&
+      m.wynikGosc !== undefined,
+  ).length;
+
+  const avgZolte =
+    totalJakoGlowny > 0 ? (totalZolte / totalJakoGlowny).toFixed(2) : "—";
+  const avgCzerwone =
+    totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFixed(2) : "—";
+>>>>>>> 93909dd (panel admina)
 
   if (loading) {
     return (
@@ -386,6 +543,7 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
 
   return (
     <div className="matches-list-container">
+<<<<<<< HEAD
       
     <div className="list-summary">
           <div className="summary-item">
@@ -427,12 +585,70 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
   <span className="summary-value summary-value--red">{avgCzerwone}</span>
 </div>
         </div>
+=======
+      <div className="page-heading"><div><p className="eyebrow">TERMINARZ I ROZLICZENIA</p><h1>Moje mecze</h1><p>Wyniki, delegacje i płatności w jednym miejscu.</p></div><button className="primary-action" onClick={() => navigate("/add-match")}>+ Dodaj mecz</button></div>
+      <div className="list-summary">
+        <div className="summary-item">
+          <span className="summary-label">⚽ Mecze</span>
+          <span className="summary-value">{totalMecze}</span>
+        </div>
+        <div className="summary-item">
+          <span className="summary-label">💰 Suma kasy</span>
+          <span className="summary-value">{totalKasa.toFixed(2)} zł</span>
+        </div>
+        <div className="summary-item">
+          <span className="summary-label">🧾 Podatek</span>
+          <span className="summary-value summary-value--tax">
+            {totalPodatek.toFixed(2)} zł
+          </span>
+        </div>
+
+        <div className="summary-item">
+          <span className="summary-label">⏳ Nieopłacone</span>
+          <span className="summary-value summary-value--tax">
+            {totalNiezaplacone}
+          </span>
+        </div>
+        <div className="summary-item">
+          <span className="summary-label">🟨 Żółte kartki</span>
+          <span className="summary-value summary-value--yellow">
+            {totalZolte}
+          </span>
+        </div>
+        <div className="summary-item">
+          <span className="summary-label">🟥 Czerwone kartki</span>
+          <span className="summary-value summary-value--red">
+            {totalCzerwone}
+          </span>
+        </div>
+        <div className="summary-item">
+          <span className="summary-label">⚽ Sędzia główny</span>
+          <span className="summary-value">{totalJakoGlowny}</span>
+        </div>
+        <div className="summary-item">
+          <span className="summary-label">🟨 Śr. żółte</span>
+          <span className="summary-value summary-value--yellow">
+            {avgZolte}
+          </span>
+        </div>
+        <div className="summary-item">
+          <span className="summary-label">🟥 Śr. czerwone</span>
+          <span className="summary-value summary-value--red">
+            {avgCzerwone}
+          </span>
+        </div>
+      </div>
+>>>>>>> 93909dd (panel admina)
       {mecze.length === 0 ? (
         <div className="empty-state">
           <div className="empty-icon">📋</div>
           <h2>Brak meczów</h2>
           <p>Dodaj swój pierwszy mecz aby go tutaj zobaczyć</p>
+<<<<<<< HEAD
           <button 
+=======
+          <button
+>>>>>>> 93909dd (panel admina)
             className="btn-add-match"
             onClick={() => navigate("/add-match")}
           >
@@ -443,7 +659,11 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
         <>
           {/* FILTERS & SORT SECTION */}
           <div className="filters-sort-container">
+<<<<<<< HEAD
             <button 
+=======
+            <button
+>>>>>>> 93909dd (panel admina)
               className="btn-toggle-filters"
               onClick={() => setShowFilters(!showFilters)}
             >
@@ -606,7 +826,10 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                           onChange={() => {
                             const newFilters = { ...filters, rundy: [] };
                             setFilters(newFilters);
+<<<<<<< HEAD
                             applyFiltersAndSort(mecze, newFilters, sortBy);
+=======
+>>>>>>> 93909dd (panel admina)
                           }}
                           className="filter-checkbox"
                         />
@@ -625,11 +848,28 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                       className="filter-select"
                     >
                       <option value="all">Wszystkie</option>
+<<<<<<< HEAD
                       {[...new Set(
                         mecze.map((m) => m.sezon || getRundaSezon(m.data).sezon).filter(Boolean)
                       )].sort().reverse().map((s) => (
                         <option key={s} value={s}>{s}</option>
                       ))}
+=======
+                      {[
+                        ...new Set(
+                          mecze
+                            .map((m) => m.sezon || getRundaSezon(m.data).sezon)
+                            .filter(Boolean),
+                        ),
+                      ]
+                        .sort()
+                        .reverse()
+                        .map((s) => (
+                          <option key={s} value={s}>
+                            {s}
+                          </option>
+                        ))}
+>>>>>>> 93909dd (panel admina)
                     </select>
                   </div>
 
@@ -668,11 +908,22 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
           {/* MODAL NA TELEFONIE */}
           {isMobile && expandedId && (
             <div className="expanded-modal">
+<<<<<<< HEAD
               <button className="btn-close-modal" onClick={() => toggleExpanded(expandedId)}>
                 ✕
               </button>
               <div className="expanded-modal-content match-card expanded-full">
                 {filteredMecze.map((mecz) => 
+=======
+              <button
+                className="btn-close-modal"
+                onClick={() => toggleExpanded(expandedId)}
+              >
+                ✕
+              </button>
+              <div className="expanded-modal-content match-card expanded-full">
+                {filteredMecze.map((mecz) =>
+>>>>>>> 93909dd (panel admina)
                   expandedId === mecz.id && editingId !== mecz.id ? (
                     <div key={mecz.id}>
                       <div className="match-header">
@@ -691,28 +942,64 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
 
                       <div className="match-score">
                         <div className="score-display">
+<<<<<<< HEAD
                           <span className="score">{mecz.wynikGospodarz !== null ? mecz.wynikGospodarz : "-"}</span>
                           <span className="score-separator">:</span>
                           <span className="score">{mecz.wynikGosc !== null ? mecz.wynikGosc : "-"}</span>
+=======
+                          <span className="score">
+                            {mecz.wynikGospodarz !== null
+                              ? mecz.wynikGospodarz
+                              : "-"}
+                          </span>
+                          <span className="score-separator">:</span>
+                          <span className="score">
+                            {mecz.wynikGosc !== null ? mecz.wynikGosc : "-"}
+                          </span>
+>>>>>>> 93909dd (panel admina)
                         </div>
                       </div>
 
                       <div className="match-stats">
                         <div className="stats-grid">
                           <div className="stat-column">
+<<<<<<< HEAD
                             <span className="stat-header">Żółte <br></br>Kartki</span>
                             <div className="stat-values">
                               <span className="stat-value-yellow">{mecz.zolteKartkiGospodarz || 0}</span>
                               <span className="stat-separator">-</span>
                               <span className="stat-value-yellow">{mecz.zolteKartkiGosc || 0}</span>
+=======
+                            <span className="stat-header">
+                              Żółte <br></br>Kartki
+                            </span>
+                            <div className="stat-values">
+                              <span className="stat-value-yellow">
+                                {mecz.zolteKartkiGospodarz || 0}
+                              </span>
+                              <span className="stat-separator">-</span>
+                              <span className="stat-value-yellow">
+                                {mecz.zolteKartkiGosc || 0}
+                              </span>
+>>>>>>> 93909dd (panel admina)
                             </div>
                           </div>
                           <div className="stat-column">
                             <span className="stat-header">Czerwone Kartki</span>
                             <div className="stat-values">
+<<<<<<< HEAD
                               <span className="stat-value-red">{mecz.czerwoneKartkiGospodarz || 0}</span>
                               <span className="stat-separator">-</span>
                               <span className="stat-value-red">{mecz.czerwoneKartkiGosc || 0}</span>
+=======
+                              <span className="stat-value-red">
+                                {mecz.czerwoneKartkiGospodarz || 0}
+                              </span>
+                              <span className="stat-separator">-</span>
+                              <span className="stat-value-red">
+                                {mecz.czerwoneKartkiGosc || 0}
+                              </span>
+>>>>>>> 93909dd (panel admina)
                             </div>
                           </div>
                         </div>
@@ -735,37 +1022,78 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                         </div>
                         <div className="detail-item">
                           <span className="detail-label">Kasa:</span>
+<<<<<<< HEAD
                           <span className="detail-value">{mecz.kasa || "-"} zł</span>
                         </div>
                         <div className="detail-item">
                           <span className="detail-label">Nr meczu:</span>
                           <span className="detail-value">{mecz.numer_meczu}</span>
+=======
+                          <span className="detail-value">
+                            {mecz.kasa || "-"} zł
+                          </span>
+                        </div>
+                        <div className="detail-item">
+                          <span className="detail-label">Nr meczu:</span>
+                          <span className="detail-value">
+                            {mecz.numer_meczu}
+                          </span>
+>>>>>>> 93909dd (panel admina)
                         </div>
                         <div className="detail-item">
                           <span className="detail-label">Runda:</span>
                           <span className="detail-value">
+<<<<<<< HEAD
                             {mecz.runda || getRundaSezon(mecz.data).runda || "—"}
+=======
+                            {mecz.runda ||
+                              getRundaSezon(mecz.data).runda ||
+                              "—"}
+>>>>>>> 93909dd (panel admina)
                           </span>
                         </div>
                         <div className="detail-item">
                           <span className="detail-label">Sezon:</span>
                           <span className="detail-value">
+<<<<<<< HEAD
                             {mecz.sezon || getRundaSezon(mecz.data).sezon || "—"}
+=======
+                            {mecz.sezon ||
+                              getRundaSezon(mecz.data).sezon ||
+                              "—"}
+>>>>>>> 93909dd (panel admina)
                           </span>
                         </div>
                       </div>
 
                       <div className="match-footer">
                         {mecz.delegacja === 1 && (
+<<<<<<< HEAD
                           <span className="badge badge-delegacja">Delegacja</span>
                         )}
                         <span className={`badge ${mecz.zaplacone === "T" ? "badge-paid" : "badge-unpaid"}`}>
                           {mecz.zaplacone === "T" ? "✓ Zapłacone" : "○ Nieopłacone"}
+=======
+                          <span className="badge badge-delegacja">
+                            Delegacja
+                          </span>
+                        )}
+                        <span
+                          className={`badge ${mecz.zaplacone === "T" ? "badge-paid" : "badge-unpaid"}`}
+                        >
+                          {mecz.zaplacone === "T"
+                            ? "✓ Zapłacone"
+                            : "○ Nieopłacone"}
+>>>>>>> 93909dd (panel admina)
                         </span>
                       </div>
 
                       <div className="match-actions">
+<<<<<<< HEAD
                         <button 
+=======
+                        <button
+>>>>>>> 93909dd (panel admina)
                           className="btn-edit"
                           onClick={(e) => {
                             e.stopPropagation();
@@ -774,16 +1102,28 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                         >
                           ✏️ Edytuj
                         </button>
+<<<<<<< HEAD
                         <button 
+=======
+                        <button
+>>>>>>> 93909dd (panel admina)
                           className={`btn-payment ${mecz.zaplacone === "T" ? "btn-paid" : "btn-unpaid"}`}
                           onClick={(e) => {
                             e.stopPropagation();
                             handleTogglePlacone(mecz.id, mecz.zaplacone);
                           }}
                         >
+<<<<<<< HEAD
                           {mecz.zaplacone === "T" ? "✓ Zapłacone" : "○ Nieopłacone"}
                         </button>
                         <button 
+=======
+                          {mecz.zaplacone === "T"
+                            ? "✓ Zapłacone"
+                            : "○ Nieopłacone"}
+                        </button>
+                        <button
+>>>>>>> 93909dd (panel admina)
                           className="btn-delete"
                           onClick={(e) => {
                             e.stopPropagation();
@@ -801,11 +1141,19 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                             }}
                           >
                             📄 PDF
+<<<<<<< HEAD
   </button>
 )}
                       </div>
                     </div>
                   ) : null
+=======
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  ) : null,
+>>>>>>> 93909dd (panel admina)
                 )}
 
                 {expandedId && editingId === expandedId && (
@@ -819,7 +1167,16 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                             type="number"
                             min="0"
                             value={editData.wynikGospodarz}
+<<<<<<< HEAD
                             onChange={(e) => setEditData({...editData, wynikGospodarz: e.target.value})}
+=======
+                            onChange={(e) =>
+                              setEditData({
+                                ...editData,
+                                wynikGospodarz: e.target.value,
+                              })
+                            }
+>>>>>>> 93909dd (panel admina)
                             className="edit-input"
                           />
                         </div>
@@ -829,7 +1186,16 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                             type="number"
                             min="0"
                             value={editData.wynikGosc}
+<<<<<<< HEAD
                             onChange={(e) => setEditData({...editData, wynikGosc: e.target.value})}
+=======
+                            onChange={(e) =>
+                              setEditData({
+                                ...editData,
+                                wynikGosc: e.target.value,
+                              })
+                            }
+>>>>>>> 93909dd (panel admina)
                             className="edit-input"
                           />
                         </div>
@@ -845,7 +1211,16 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                             type="number"
                             min="0"
                             value={editData.zolteKartkiGospodarz}
+<<<<<<< HEAD
                             onChange={(e) => setEditData({...editData, zolteKartkiGospodarz: e.target.value})}
+=======
+                            onChange={(e) =>
+                              setEditData({
+                                ...editData,
+                                zolteKartkiGospodarz: e.target.value,
+                              })
+                            }
+>>>>>>> 93909dd (panel admina)
                             className="edit-input yellow-input"
                           />
                         </div>
@@ -855,7 +1230,16 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                             type="number"
                             min="0"
                             value={editData.zolteKartkiGosc}
+<<<<<<< HEAD
                             onChange={(e) => setEditData({...editData, zolteKartkiGosc: e.target.value})}
+=======
+                            onChange={(e) =>
+                              setEditData({
+                                ...editData,
+                                zolteKartkiGosc: e.target.value,
+                              })
+                            }
+>>>>>>> 93909dd (panel admina)
                             className="edit-input yellow-input"
                           />
                         </div>
@@ -871,7 +1255,16 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                             type="number"
                             min="0"
                             value={editData.czerwoneKartkiGospodarz}
+<<<<<<< HEAD
                             onChange={(e) => setEditData({...editData, czerwoneKartkiGospodarz: e.target.value})}
+=======
+                            onChange={(e) =>
+                              setEditData({
+                                ...editData,
+                                czerwoneKartkiGospodarz: e.target.value,
+                              })
+                            }
+>>>>>>> 93909dd (panel admina)
                             className="edit-input red-input"
                           />
                         </div>
@@ -881,7 +1274,16 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                             type="number"
                             min="0"
                             value={editData.czerwoneKartkiGosc}
+<<<<<<< HEAD
                             onChange={(e) => setEditData({...editData, czerwoneKartkiGosc: e.target.value})}
+=======
+                            onChange={(e) =>
+                              setEditData({
+                                ...editData,
+                                czerwoneKartkiGosc: e.target.value,
+                              })
+                            }
+>>>>>>> 93909dd (panel admina)
                             className="edit-input red-input"
                           />
                         </div>
@@ -889,16 +1291,24 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                     </div>
 
                     <div className="edit-actions">
+<<<<<<< HEAD
                       <button 
+=======
+                      <button
+>>>>>>> 93909dd (panel admina)
                         className="btn-save"
                         onClick={() => handleSave(expandedId)}
                       >
                         ✓ Zapisz
                       </button>
+<<<<<<< HEAD
                       <button 
                         className="btn-cancel"
                         onClick={handleCancel}
                       >
+=======
+                      <button className="btn-cancel" onClick={handleCancel}>
+>>>>>>> 93909dd (panel admina)
                         ✕ Anuluj
                       </button>
                     </div>
@@ -919,8 +1329,13 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
           ) : (
             <div className="matches-grid">
               {filteredMecze.map((mecz) => (
+<<<<<<< HEAD
                 <div 
                   key={mecz.id} 
+=======
+                <div
+                  key={mecz.id}
+>>>>>>> 93909dd (panel admina)
                   className={`match-card ${isMobile ? "match-compact-card" : "match-desktop-expanded"}`}
                 >
                   {editingId === mecz.id ? (
@@ -934,7 +1349,16 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                               type="number"
                               min="0"
                               value={editData.wynikGospodarz}
+<<<<<<< HEAD
                               onChange={(e) => setEditData({...editData, wynikGospodarz: e.target.value})}
+=======
+                              onChange={(e) =>
+                                setEditData({
+                                  ...editData,
+                                  wynikGospodarz: e.target.value,
+                                })
+                              }
+>>>>>>> 93909dd (panel admina)
                               className="edit-input"
                             />
                           </div>
@@ -944,7 +1368,16 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                               type="number"
                               min="0"
                               value={editData.wynikGosc}
+<<<<<<< HEAD
                               onChange={(e) => setEditData({...editData, wynikGosc: e.target.value})}
+=======
+                              onChange={(e) =>
+                                setEditData({
+                                  ...editData,
+                                  wynikGosc: e.target.value,
+                                })
+                              }
+>>>>>>> 93909dd (panel admina)
                               className="edit-input"
                             />
                           </div>
@@ -960,7 +1393,16 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                               type="number"
                               min="0"
                               value={editData.zolteKartkiGospodarz}
+<<<<<<< HEAD
                               onChange={(e) => setEditData({...editData, zolteKartkiGospodarz: e.target.value})}
+=======
+                              onChange={(e) =>
+                                setEditData({
+                                  ...editData,
+                                  zolteKartkiGospodarz: e.target.value,
+                                })
+                              }
+>>>>>>> 93909dd (panel admina)
                               className="edit-input yellow-input"
                             />
                           </div>
@@ -970,7 +1412,16 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                               type="number"
                               min="0"
                               value={editData.zolteKartkiGosc}
+<<<<<<< HEAD
                               onChange={(e) => setEditData({...editData, zolteKartkiGosc: e.target.value})}
+=======
+                              onChange={(e) =>
+                                setEditData({
+                                  ...editData,
+                                  zolteKartkiGosc: e.target.value,
+                                })
+                              }
+>>>>>>> 93909dd (panel admina)
                               className="edit-input yellow-input"
                             />
                           </div>
@@ -986,7 +1437,16 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                               type="number"
                               min="0"
                               value={editData.czerwoneKartkiGospodarz}
+<<<<<<< HEAD
                               onChange={(e) => setEditData({...editData, czerwoneKartkiGospodarz: e.target.value})}
+=======
+                              onChange={(e) =>
+                                setEditData({
+                                  ...editData,
+                                  czerwoneKartkiGospodarz: e.target.value,
+                                })
+                              }
+>>>>>>> 93909dd (panel admina)
                               className="edit-input red-input"
                             />
                           </div>
@@ -996,7 +1456,16 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                               type="number"
                               min="0"
                               value={editData.czerwoneKartkiGosc}
+<<<<<<< HEAD
                               onChange={(e) => setEditData({...editData, czerwoneKartkiGosc: e.target.value})}
+=======
+                              onChange={(e) =>
+                                setEditData({
+                                  ...editData,
+                                  czerwoneKartkiGosc: e.target.value,
+                                })
+                              }
+>>>>>>> 93909dd (panel admina)
                               className="edit-input red-input"
                             />
                           </div>
@@ -1004,22 +1473,37 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                       </div>
 
                       <div className="edit-actions">
+<<<<<<< HEAD
                         <button 
+=======
+                        <button
+>>>>>>> 93909dd (panel admina)
                           className="btn-save"
                           onClick={() => handleSave(mecz.id)}
                         >
                           ✓ Zapisz
                         </button>
+<<<<<<< HEAD
                         <button 
                           className="btn-cancel"
                           onClick={handleCancel}
                         >
+=======
+                        <button className="btn-cancel" onClick={handleCancel}>
+>>>>>>> 93909dd (panel admina)
                           ✕ Anuluj
                         </button>
                       </div>
                     </div>
                   ) : isMobile ? (
+<<<<<<< HEAD
                     <div className="match-compact" onClick={() => toggleExpanded(mecz.id)}>
+=======
+                    <div
+                      className="match-compact"
+                      onClick={() => toggleExpanded(mecz.id)}
+                    >
+>>>>>>> 93909dd (panel admina)
                       <div className="match-compact-content">
                         <div className="compact-teams">
                           <span className="compact-team">{mecz.gospodarz}</span>
@@ -1028,7 +1512,13 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                         </div>
                         <div className="compact-meta">
                           <span className="compact-liga">{mecz.liga}</span>
+<<<<<<< HEAD
                           <span className="compact-date">{new Date(mecz.data).toLocaleDateString("pl-PL")}</span>
+=======
+                          <span className="compact-date">
+                            {new Date(mecz.data).toLocaleDateString("pl-PL")}
+                          </span>
+>>>>>>> 93909dd (panel admina)
                         </div>
                       </div>
                       <div className="expand-icon">▼</div>
@@ -1051,28 +1541,64 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
 
                       <div className="match-score">
                         <div className="score-display">
+<<<<<<< HEAD
                           <span className="score">{mecz.wynikGospodarz !== null ? mecz.wynikGospodarz : "-"}</span>
                           <span className="score-separator">:</span>
                           <span className="score">{mecz.wynikGosc !== null ? mecz.wynikGosc : "-"}</span>
+=======
+                          <span className="score">
+                            {mecz.wynikGospodarz !== null
+                              ? mecz.wynikGospodarz
+                              : "-"}
+                          </span>
+                          <span className="score-separator">:</span>
+                          <span className="score">
+                            {mecz.wynikGosc !== null ? mecz.wynikGosc : "-"}
+                          </span>
+>>>>>>> 93909dd (panel admina)
                         </div>
                       </div>
 
                       <div className="match-stats">
                         <div className="stats-grid">
                           <div className="stat-column">
+<<<<<<< HEAD
                             <span className="stat-header">Żółte <br></br>Kartki</span>
                             <div className="stat-values">
                               <span className="stat-value-yellow">{mecz.zolteKartkiGospodarz || 0}</span>
                               <span className="stat-separator">-</span>
                               <span className="stat-value-yellow">{mecz.zolteKartkiGosc || 0}</span>
+=======
+                            <span className="stat-header">
+                              Żółte <br></br>Kartki
+                            </span>
+                            <div className="stat-values">
+                              <span className="stat-value-yellow">
+                                {mecz.zolteKartkiGospodarz || 0}
+                              </span>
+                              <span className="stat-separator">-</span>
+                              <span className="stat-value-yellow">
+                                {mecz.zolteKartkiGosc || 0}
+                              </span>
+>>>>>>> 93909dd (panel admina)
                             </div>
                           </div>
                           <div className="stat-column">
                             <span className="stat-header">Czerwone Kartki</span>
                             <div className="stat-values">
+<<<<<<< HEAD
                               <span className="stat-value-red">{mecz.czerwoneKartkiGospodarz || 0}</span>
                               <span className="stat-separator">-</span>
                               <span className="stat-value-red">{mecz.czerwoneKartkiGosc || 0}</span>
+=======
+                              <span className="stat-value-red">
+                                {mecz.czerwoneKartkiGospodarz || 0}
+                              </span>
+                              <span className="stat-separator">-</span>
+                              <span className="stat-value-red">
+                                {mecz.czerwoneKartkiGosc || 0}
+                              </span>
+>>>>>>> 93909dd (panel admina)
                             </div>
                           </div>
                         </div>
@@ -1095,6 +1621,7 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                         </div>
                         <div className="detail-item">
                           <span className="detail-label">Kasa:</span>
+<<<<<<< HEAD
                           <span className="detail-value">{mecz.kasa || "-"} zł</span>
                         </div>
                         <div className="detail-item">
@@ -1102,19 +1629,48 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                           <span className="detail-value">{mecz.numer_meczu}</span>
                         </div>
                         
+=======
+                          <span className="detail-value">
+                            {mecz.kasa || "-"} zł
+                          </span>
+                        </div>
+                        <div className="detail-item">
+                          <span className="detail-label">Nr meczu:</span>
+                          <span className="detail-value">
+                            {mecz.numer_meczu}
+                          </span>
+                        </div>
+>>>>>>> 93909dd (panel admina)
                       </div>
 
                       <div className="match-footer">
                         {mecz.delegacja === 1 && (
+<<<<<<< HEAD
                           <span className="badge badge-delegacja m-1">Delegacja</span>
                         )}
                         <span className={`badge ${mecz.zaplacone === "T" ? "badge-paid" : "badge-unpaid"}`}>
                           {mecz.zaplacone === "T" ? "✓ Zapłacone" : "○ Nieopłacone"}
+=======
+                          <span className="badge badge-delegacja m-1">
+                            Delegacja
+                          </span>
+                        )}
+                        <span
+                          className={`badge ${mecz.zaplacone === "T" ? "badge-paid" : "badge-unpaid"}`}
+                        >
+                          {mecz.zaplacone === "T"
+                            ? "✓ Zapłacone"
+                            : "○ Nieopłacone"}
+>>>>>>> 93909dd (panel admina)
                         </span>
                       </div>
 
                       <div className="match-actions">
+<<<<<<< HEAD
                         <button 
+=======
+                        <button
+>>>>>>> 93909dd (panel admina)
                           className="btn-edit"
                           onClick={(e) => {
                             e.stopPropagation();
@@ -1123,16 +1679,28 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                         >
                           ✏️ Edytuj
                         </button>
+<<<<<<< HEAD
                         <button 
+=======
+                        <button
+>>>>>>> 93909dd (panel admina)
                           className={`btn-payment ${mecz.zaplacone === "T" ? "btn-paid" : "btn-unpaid"} m-1`}
                           onClick={(e) => {
                             e.stopPropagation();
                             handleTogglePlacone(mecz.id, mecz.zaplacone);
                           }}
                         >
+<<<<<<< HEAD
                           {mecz.zaplacone === "T" ? "✓ Zapłacone" : "○ Nieopłacone"}
                         </button>
                         <button 
+=======
+                          {mecz.zaplacone === "T"
+                            ? "✓ Zapłacone"
+                            : "○ Nieopłacone"}
+                        </button>
+                        <button
+>>>>>>> 93909dd (panel admina)
                           className="btn-delete"
                           onClick={(e) => {
                             e.stopPropagation();
@@ -1142,6 +1710,7 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
                           🗑️ Usuń
                         </button>
                         {mecz.delegacja === 1 && (
+<<<<<<< HEAD
   <button
     className="btn-pdf"
     onClick={(e) => {
@@ -1152,6 +1721,18 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
     📄 PDF
   </button>
 )}
+=======
+                          <button
+                            className="btn-pdf"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleGeneratePDF(mecz);
+                            }}
+                          >
+                            📄 PDF
+                          </button>
+                        )}
+>>>>>>> 93909dd (panel admina)
                       </div>
                     </>
                   )}
@@ -1162,7 +1743,11 @@ const avgCzerwone = totalJakoGlowny > 0 ? (totalCzerwone / totalJakoGlowny).toFi
         </>
       )}
 
+<<<<<<< HEAD
       <button 
+=======
+      <button
+>>>>>>> 93909dd (panel admina)
         className="btn-floating-add"
         onClick={() => navigate("/add-match")}
         title="Dodaj nowy mecz"

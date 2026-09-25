@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./League.css";
 
@@ -53,3 +54,65 @@ export function League({
     </div>
   );
 }
+=======
+import React from "react";
+import "./League.css";
+
+export function League({
+  poziomy,
+  liga,
+  kasa,
+  podatek,
+  onLigaChange,
+}) {
+  return (
+    <div className="form-section league-section">
+      <h3 className="section-title">Finanse</h3>
+      <div className="form-grid form-grid-3">
+        <div className="form-group">
+          <label className="form-label" htmlFor="match-league">Liga</label>
+          <select 
+            id="match-league"
+            value={liga} 
+            onChange={onLigaChange} 
+            className="form-select"
+            required
+          >
+            <option value="">Wybierz ligę</option>
+            {poziomy.map((p) => (
+              <option key={p.id} value={p.nazwa}>
+                {p.nazwa}
+              </option>
+            ))}
+          </select>
+          <div className="select-underline"></div>
+        </div>
+
+        <div className="form-group">
+          <label className="form-label" htmlFor="match-fee">Ekwiwalent</label>
+          <input 
+            type="text" 
+            id="match-fee"
+            value={kasa}
+            readOnly 
+            className="form-input"
+            
+          />
+        </div>
+
+        <div className="form-group">
+          <label className="form-label" htmlFor="match-tax">Podatek</label>
+          <input 
+            type="text" 
+            id="match-tax"
+            value={podatek}
+            readOnly 
+            className="form-input"
+            
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+>>>>>>> 93909dd (panel admina)
